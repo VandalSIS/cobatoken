@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: 'COBA Token',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://0zv9fxypnefwkgxn.public.blob.vercel-storage.com/coba/COBA_page-0001.png',
         width: 1200,
         height: 630,
         alt: 'COBA Token - Gold-Backed Cryptocurrency',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'COBA Token - Gold-Backed Cryptocurrency',
     description: 'Revolutionary gold-backed ERC-20 cryptocurrency combining stability with blockchain innovation.',
-    images: ['/og-image.png'],
+    images: ['https://0zv9fxypnefwkgxn.public.blob.vercel-storage.com/coba/COBA_page-0001.png'],
     creator: '@cobatoken',
   },
   robots: {
@@ -78,12 +78,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" href="https://0zv9fxypnefwkgxn.public.blob.vercel-storage.com/coba/COBA_page-0001-Photoroom.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://0zv9fxypnefwkgxn.public.blob.vercel-storage.com/coba/COBA_page-0001-Photoroom.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://0zv9fxypnefwkgxn.public.blob.vercel-storage.com/coba/COBA_page-0001-Photoroom.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="https://0zv9fxypnefwkgxn.public.blob.vercel-storage.com/coba/COBA_page-0001-Photoroom.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f59e0b" />
+        <link rel="mask-icon" href="https://0zv9fxypnefwkgxn.public.blob.vercel-storage.com/coba/COBA_page-0001-Photoroom.png" color="#f59e0b" />
         <meta name="msapplication-TileColor" content="#f59e0b" />
         <meta name="theme-color" content="#f59e0b" />
       </head>
