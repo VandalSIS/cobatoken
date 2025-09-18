@@ -46,7 +46,7 @@ export default function Header() {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src="https://0zv9fxypnefwkgxn.public.blob.vercel-storage.com/coba/COBA_page-0001-Photoroom.png"
+                src="https://0zv9fxypnefwkgxn.public.blob.vercel-storage.com/coba/boooo.png"
                 alt="COBA Logo"
                 width={40}
                 height={40}
