@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -38,13 +39,20 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-3">
             <motion.div
-              className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold-gradient"
+              className="flex items-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="text-xl font-bold text-white">C</span>
+              <Image
+                src="https://0zv9fxypnefwkgxn.public.blob.vercel-storage.com/coba/COBA_page-0001-Photoroom.png"
+                alt="COBA Logo"
+                width={40}
+                height={40}
+                className="h-10 w-10 object-contain"
+                priority
+              />
             </motion.div>
             <span className="text-xl font-bold text-gray-900 dark:text-white">
               COBA
