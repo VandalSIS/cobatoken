@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['images.unsplash.com', 'images.pexels.com'],
+    domains: ['images.unsplash.com', 'images.pexels.com', '0zv9fxypnefwkgxn.public.blob.vercel-storage.com'],
     formats: ['image/webp', 'image/avif'],
   },
   compiler: {
