@@ -11,15 +11,6 @@ export interface TokenMetrics {
   annualEmission: number;
 }
 
-export interface TeamMember {
-  id: string;
-  name: string;
-  position: string;
-  bio: string;
-  image: string;
-  linkedin?: string;
-  twitter?: string;
-}
 
 export interface RoadmapItem {
   id: string;
@@ -55,15 +46,6 @@ export interface NewsItem {
   url: string;
 }
 
-export interface Testimonial {
-  id: string;
-  name: string;
-  position: string;
-  company: string;
-  content: string;
-  image: string;
-  rating: number;
-}
 
 export interface TokenDistribution {
   category: string;

@@ -68,9 +68,6 @@ const translations = {
     'features.fastTransactions': 'Быстрые транзакции',
     'features.fastTransactionsDesc': 'Основан на Ethereum для быстрых и безопасных переводов',
     
-    // Team
-    'team.title': 'Наша команда',
-    'team.description': 'Опытные специалисты в области экологии, финансовых технологий и устойчивого развития, работающие над созданием лучшего будущего.',
     
     // News
     'news.title': 'Последние новости и обновления',
@@ -80,7 +77,7 @@ const translations = {
     'faq.title': 'Часто задаваемые вопросы',
     'faq.description': 'Получите ответы на распространенные вопросы о токенах COBA, золотом обеспечении и нашей платформе.',
     'faq.stillQuestions': 'Остались вопросы?',
-    'faq.teamHelp': 'Наша команда готова помочь вам понять токены COBA и начать работу с криптовалютой с золотым обеспечением.',
+    'faq.teamHelp': 'Мы готовы помочь вам понять токены COBA и начать работу с криптовалютой с золотым обеспечением.',
     'faq.contactSupport': 'Связаться с поддержкой',
     
     // Footer
@@ -111,11 +108,11 @@ const translations = {
     // Contact Page
     'contact.title': 'Свяжитесь с нами',
     'contact.subtitle': 'Готовы начать свой путь с COBA?',
-    'contact.description': 'У нас есть команда экспертов, готовых ответить на ваши вопросы и помочь вам понять преимущества криптовалюты с золотым обеспечением.',
+    'contact.description': 'У нас есть эксперты, готовые ответить на ваши вопросы и помочь вам понять преимущества криптовалюты с золотым обеспечением.',
     'contact.emailUs': 'Напишите нам',
     'contact.emailDescription': 'Отправьте нам письмо, и мы ответим в течение 24 часов',
     'contact.callUs': 'Позвоните нам',
-    'contact.callDescription': 'Говорите напрямую с нашей командой в рабочее время',
+    'contact.callDescription': 'Говорите напрямую с нами в рабочее время',
     'contact.visitUs': 'Посетите нас',
     'contact.visitDescription': 'Наша штаб-квартира открыта для запланированных встреч',
   },
@@ -173,9 +170,6 @@ const translations = {
     'features.fastTransactions': 'Fast Transactions',
     'features.fastTransactionsDesc': 'Ethereum-based for quick, secure transfers',
     
-    // Team
-    'team.title': 'Our Team',
-    'team.description': 'Experienced professionals in ecology, financial technology, and sustainable development working to create a better future.',
     
     // News
     'news.title': 'Latest News & Updates',
@@ -185,7 +179,7 @@ const translations = {
     'faq.title': 'Frequently Asked Questions',
     'faq.description': 'Get answers to common questions about COBA tokens, gold backing, and our platform.',
     'faq.stillQuestions': 'Still have questions?',
-    'faq.teamHelp': 'Our team is here to help you understand COBA tokens and get started with gold-backed cryptocurrency.',
+    'faq.teamHelp': 'We are here to help you understand COBA tokens and get started with gold-backed cryptocurrency.',
     'faq.contactSupport': 'Contact Support',
     
     // Footer
@@ -216,11 +210,11 @@ const translations = {
     // Contact Page
     'contact.title': 'Contact Us',
     'contact.subtitle': 'Ready to Start Your COBA Journey?',
-    'contact.description': 'We have a team of experts ready to answer your questions and help you understand the benefits of gold-backed cryptocurrency.',
+    'contact.description': 'We have experts ready to answer your questions and help you understand the benefits of gold-backed cryptocurrency.',
     'contact.emailUs': 'Email Us',
     'contact.emailDescription': 'Send us an email and we\'ll respond within 24 hours',
     'contact.callUs': 'Call Us',
-    'contact.callDescription': 'Speak directly with our team during business hours',
+    'contact.callDescription': 'Speak directly with us during business hours',
     'contact.visitUs': 'Visit Us',
     'contact.visitDescription': 'Our headquarters are open for scheduled meetings',
   },

@@ -1,4 +1,4 @@
-import { TokenMetrics, TeamMember, RoadmapItem, FAQ, Testimonial, TokenDistribution, NewsItem } from '@/types';
+import { TokenMetrics, RoadmapItem, FAQ, TokenDistribution, NewsItem } from '@/types';
 
 export const TOKEN_METRICS: TokenMetrics = {
   name: 'COBA',
@@ -13,41 +13,6 @@ export const TOKEN_METRICS: TokenMetrics = {
   annualEmission: 9000000000, // 9 billion per year
 };
 
-export const TEAM_MEMBERS: TeamMember[] = [
-  {
-    id: '1',
-    name: 'Александр Петров',
-    position: 'Исполнительный директор ICC "Universum"',
-    bio: 'Эксперт в области устойчивого развития и экологических технологий. 20+ лет опыта в международных проектах и партнерстве с государственными организациями.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
-    linkedin: 'https://linkedin.com/in/alexanderpetrov',
-    twitter: 'https://twitter.com/apetrov',
-  },
-  {
-    id: '2',
-    name: 'Мария Козлова',
-    position: 'Директор по финансам и паевым фондам',
-    bio: 'Специалист по управлению драгоценными металлами и финансовыми активами. Опыт работы с банковскими золотыми резервами и международными фондами.',
-    image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face',
-    linkedin: 'https://linkedin.com/in/mariakozlova',
-  },
-  {
-    id: '3',
-    name: 'Дмитрий Соколов',
-    position: 'Руководитель технологических проектов',
-    bio: 'Архитектор блокчейн-решений и криптовалютных платформ. Эксперт по смарт-контрактам и децентрализованным финансовым системам.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
-    linkedin: 'https://linkedin.com/in/dmitrysokolov',
-  },
-  {
-    id: '4',
-    name: 'Елена Волкова',
-    position: 'Директор по экологическим программам',
-    bio: 'Специалист по экологически чистым технологиям и устойчивому развитию. Руководит образовательными программами и социальными инициативами.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face',
-    linkedin: 'https://linkedin.com/in/elenavolkova',
-  },
-];
 
 export const ROADMAP: RoadmapItem[] = [
   {
@@ -141,35 +106,6 @@ export const FAQ_ITEMS: FAQ[] = [
   },
 ];
 
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: '1',
-    name: 'Robert Kim',
-    position: 'Portfolio Manager',
-    company: 'Apex Capital',
-    content: 'COBA provides the stability of gold with the efficiency of blockchain technology. It\'s become a cornerstone of our digital asset strategy.',
-    image: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&h=400&fit=crop&crop=face',
-    rating: 5,
-  },
-  {
-    id: '2',
-    name: 'Maria Santos',
-    position: 'Crypto Analyst',
-    company: 'Blockchain Insights',
-    content: 'The transparency and regular audits give me confidence in COBA\'s gold backing. It\'s refreshing to see such commitment to accountability.',
-    image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=400&fit=crop&crop=face',
-    rating: 5,
-  },
-  {
-    id: '3',
-    name: 'David Park',
-    position: 'Investment Director',
-    company: 'Future Fund',
-    content: 'COBA bridges traditional precious metals investing with modern DeFi capabilities. The yield opportunities are impressive.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face',
-    rating: 5,
-  },
-];
 
 export const TOKEN_DISTRIBUTION: TokenDistribution[] = [
   {
@@ -185,7 +121,7 @@ export const TOKEN_DISTRIBUTION: TokenDistribution[] = [
     color: '#D97706',
   },
   {
-    category: 'Team & Advisors',
+    category: 'Development Fund',
     percentage: 15,
     amount: 4950000000,
     color: '#B45309',
