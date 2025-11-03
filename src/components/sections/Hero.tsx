@@ -117,25 +117,20 @@ export default function Hero() {
           >
             <div className="relative z-10">
               {/* Video Player */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
-                <video
-                  className="w-full h-auto rounded-2xl"
-                  controls
-                  poster="https://images.unsplash.com/photo-1605792657660-596af9009e82?w=800&h=600&fit=crop&crop=center"
+              <div className="relative flex justify-center items-center">
+                <div className="rounded-2xl overflow-hidden shadow-2xl max-w-2xl">
+                  <video
+                    className="w-full rounded-2xl block object-cover"
+                    style={{ height: '600px' }}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
+                  onError={() => console.error('Video failed to load')}
                 >
-                  <source src="/videos/video_2025-11-03_23-32-03.mp4" type="video/mp4" />
-                  {t('hero.videoNotSupported')}
-                </video>
-                
-                {/* Play Button Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/10 transition-colors">
-                  <motion.div
-                    className="w-16 h-16 bg-gold-gradient rounded-full flex items-center justify-center cursor-pointer"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <div className="w-0 h-0 border-l-[20px] border-l-white border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1"></div>
-                  </motion.div>
+                    <source src="/videos/video_2025-11-03_23-32-03.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </div>
               
