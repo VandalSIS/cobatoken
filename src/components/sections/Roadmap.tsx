@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { CheckCircle, Clock, Calendar } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/Card';
-import { ROADMAP } from '@/lib/constants';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const statusIcons = {
@@ -20,6 +19,66 @@ const statusColors = {
 
 export default function Roadmap() {
   const { t } = useLanguage();
+
+  // Create roadmap data dynamically with translations
+  const roadmapData = [
+    {
+      id: '1',
+      quarter: 'Q1',
+      year: 2024,
+      title: t('roadmap.q1.title'),
+      description: t('roadmap.q1.description'),
+      status: 'completed' as 'completed' | 'in-progress' | 'upcoming',
+      items: [
+        t('roadmap.q1.item1'),
+        t('roadmap.q1.item2'),
+        t('roadmap.q1.item3'),
+        t('roadmap.q1.item4'),
+      ],
+    },
+    {
+      id: '2',
+      quarter: 'Q2',
+      year: 2024,
+      title: t('roadmap.q2.title'),
+      description: t('roadmap.q2.description'),
+      status: 'completed' as 'completed' | 'in-progress' | 'upcoming',
+      items: [
+        t('roadmap.q2.item1'),
+        t('roadmap.q2.item2'),
+        t('roadmap.q2.item3'),
+        t('roadmap.q2.item4'),
+      ],
+    },
+    {
+      id: '3',
+      quarter: 'Q3',
+      year: 2024,
+      title: t('roadmap.q3.title'),
+      description: t('roadmap.q3.description'),
+      status: 'upcoming' as 'completed' | 'in-progress' | 'upcoming',
+      items: [
+        t('roadmap.q3.item1'),
+        t('roadmap.q3.item2'),
+        t('roadmap.q3.item3'),
+        t('roadmap.q3.item4'),
+      ],
+    },
+    {
+      id: '4',
+      quarter: 'Q4',
+      year: 2024,
+      title: t('roadmap.q4.title'),
+      description: t('roadmap.q4.description'),
+      status: 'upcoming' as 'completed' | 'in-progress' | 'upcoming',
+      items: [
+        t('roadmap.q4.item1'),
+        t('roadmap.q4.item2'),
+        t('roadmap.q4.item3'),
+        t('roadmap.q4.item4'),
+      ],
+    },
+  ];
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -42,7 +101,7 @@ export default function Roadmap() {
           <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gold-300 dark:bg-gold-600" />
 
           <div className="space-y-12">
-            {ROADMAP.map((item, index) => {
+            {roadmapData.map((item, index) => {
               const StatusIcon = statusIcons[item.status];
               const isEven = index % 2 === 0;
 

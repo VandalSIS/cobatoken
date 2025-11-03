@@ -7,6 +7,7 @@ import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { TOKEN_METRICS, TOKEN_DISTRIBUTION } from '@/lib/constants';
 import { formatCurrency, formatLargeNumber, formatNumber } from '@/lib/utils';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const emissionData = [
   { year: '2024', tokens: 9000000000, cumulative: 9000000000 },
@@ -22,13 +23,6 @@ const priceHistory = [
   { month: 'Apr', price: 0.0023 },
   { month: 'May', price: 0.0024 },
   { month: 'Jun', price: 0.0024 },
-];
-
-const utilityData = [
-  { category: 'Торговля', percentage: 45, color: '#F59E0B' },
-  { category: 'Эко-программы', percentage: 25, color: '#D97706' },
-  { category: 'DeFi', percentage: 20, color: '#B45309' },
-  { category: 'Платежи', percentage: 10, color: '#92400E' },
 ];
 
 const ecoPrograms = [
@@ -55,6 +49,14 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 };
 
 export default function TokenomicsPage() {
+  const { t } = useLanguage();
+
+  const utilityData = [
+    { category: t('tokenomics.trading'), percentage: 45, color: '#F59E0B' },
+    { category: t('tokenomics.ecoPrograms'), percentage: 25, color: '#D97706' },
+    { category: t('tokenomics.defi'), percentage: 20, color: '#B45309' },
+    { category: t('tokenomics.payments'), percentage: 10, color: '#92400E' },
+  ];
   return (
     <Layout>
       {/* Hero Section */}

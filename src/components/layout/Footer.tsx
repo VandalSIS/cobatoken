@@ -21,19 +21,19 @@ export default function Footer() {
     company: [
       { name: t('nav.about'), href: '/about' },
       { name: t('nav.tokenomics'), href: '/tokenomics' },
-      { name: 'Карьера', href: '/careers' },
+      { name: t('footer.careers'), href: '/careers' },
     ],
     resources: [
-      { name: 'Документация', href: '/whitepaper.pdf' },
-      { name: 'Руководства', href: '/docs' },
-      { name: 'Вопросы и ответы', href: '/#faq' },
-      { name: 'Блог', href: '/blog' },
+      { name: t('footer.documentation'), href: '/whitepaper.pdf' },
+      { name: t('footer.guides'), href: '/docs' },
+      { name: t('footer.faq'), href: '/#faq' },
+      { name: t('footer.blog'), href: '/blog' },
     ],
     legal: [
-      { name: 'Политика конфиденциальности', href: '/privacy' },
-      { name: 'Условия использования', href: '/terms' },
-      { name: 'Политика cookies', href: '/cookies' },
-      { name: 'Отказ от ответственности', href: '/disclaimer' },
+      { name: t('footer.privacy'), href: '/privacy' },
+      { name: t('footer.terms'), href: '/terms' },
+      { name: t('footer.cookies'), href: '/cookies' },
+      { name: t('footer.disclaimer'), href: '/disclaimer' },
     ],
   };
   return (
@@ -43,19 +43,19 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="text-center">
             <h3 className="text-2xl font-bold text-white mb-4">
-              Stay Updated with COBA
+              {t('footer.stayUpdated')}
             </h3>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              Get the latest news, updates, and insights about COBA token and the gold-backed cryptocurrency market.
+              {t('footer.newsletterDesc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder={t('footer.enterEmail')}
                 className="flex-1 px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-500"
               />
               <Button className="whitespace-nowrap">
-                Subscribe
+                {t('footer.subscribe')}
               </Button>
             </div>
           </div>
