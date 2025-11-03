@@ -25,10 +25,10 @@ const priceHistory = [
 ];
 
 const utilityData = [
-  { category: 'Trading', percentage: 45, color: '#F59E0B' },
-  { category: 'Eco Programs', percentage: 25, color: '#D97706' },
+  { category: 'Торговля', percentage: 45, color: '#F59E0B' },
+  { category: 'Эко-программы', percentage: 25, color: '#D97706' },
   { category: 'DeFi', percentage: 20, color: '#B45309' },
-  { category: 'Payments', percentage: 10, color: '#92400E' },
+  { category: 'Платежи', percentage: 10, color: '#92400E' },
 ];
 
 const ecoPrograms = [
@@ -105,10 +105,10 @@ export default function TokenomicsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Coins, label: 'Total Supply', value: formatLargeNumber(TOKEN_METRICS.totalSupply), color: 'text-blue-600' },
-              { icon: DollarSign, label: 'Current Price', value: formatCurrency(TOKEN_METRICS.currentPrice), color: 'text-green-600' },
-              { icon: Shield, label: 'Gold Backing', value: `${TOKEN_METRICS.goldBacking}g`, color: 'text-gold-600' },
-              { icon: TrendingUp, label: 'Market Cap', value: formatCurrency(TOKEN_METRICS.marketCap), color: 'text-purple-600' },
+              { icon: Coins, label: 'Общий выпуск', value: formatLargeNumber(TOKEN_METRICS.totalSupply), color: 'text-blue-600' },
+              { icon: DollarSign, label: 'Текущая цена', value: formatCurrency(TOKEN_METRICS.currentPrice), color: 'text-green-600' },
+              { icon: Shield, label: 'Золотое обеспечение', value: `${TOKEN_METRICS.goldBacking}г`, color: 'text-gold-600' },
+              { icon: TrendingUp, label: 'Рыночная капитализация', value: formatCurrency(TOKEN_METRICS.marketCap), color: 'text-purple-600' },
             ].map((metric, index) => {
               const Icon = metric.icon;
               return (
@@ -350,11 +350,11 @@ export default function TokenomicsPage() {
             >
               <div className="space-y-6">
                 {[
-                  { icon: TrendingUp, title: 'Trading & Investment', desc: 'Primary trading pair on exchanges with high liquidity' },
+                  { icon: TrendingUp, title: 'Торговля и инвестиции', desc: 'Основная торговая пара на биржах с высокой ликвидностью' },
                   { icon: Shield, title: 'Экологические программы', desc: 'Участие в программах устойчивого развития и экологических инициативах' },
-                  { icon: Users, title: 'DeFi Integration', desc: 'Lending, borrowing, and yield farming opportunities' },
-                  { icon: DollarSign, title: 'Payments', desc: 'Use for payments and transactions within our ecosystem' },
-                  { icon: Award, title: 'Governance', desc: 'Vote on protocol upgrades and community proposals' },
+                  { icon: Users, title: 'DeFi интеграция', desc: 'Возможности кредитования, заимствования и фарминга доходности' },
+                  { icon: DollarSign, title: 'Платежи', desc: 'Использование для платежей и транзакций в нашей экосистеме' },
+                  { icon: Award, title: 'Управление', desc: 'Голосование за обновления протокола и предложения сообщества' },
                 ].map((utility, index) => {
                   const Icon = utility.icon;
                   return (
@@ -450,10 +450,10 @@ export default function TokenomicsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Price Performance
+              Динамика цены
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Historical price data showing the stability and growth potential of COBA token.
+              Исторические данные о ценах, показывающие стабильность и потенциал роста токена COBA.
             </p>
           </motion.div>
 

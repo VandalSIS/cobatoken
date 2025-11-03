@@ -7,18 +7,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
-
-const navigation = [
-  { name: 'Главная', href: '/' },
-  { name: 'О проекте', href: '/about' },
-  { name: 'Токеномика', href: '/tokenomics' },
-  { name: 'Контакты', href: '/contact' },
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Header() {
+  const { language, setLanguage, t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+
+  const navigation = [
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.about'), href: '/about' },
+    { name: t('nav.tokenomics'), href: '/tokenomics' },
+    { name: t('nav.contact'), href: '/contact' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,7 +84,7 @@ export default function Header() {
                 className="flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors"
               >
                 <Globe className="h-4 w-4" />
-                <span className="text-sm font-medium">RU</span>
+                <span className="text-sm font-medium">{language.toUpperCase()}</span>
                 <ChevronDown className="h-4 w-4" />
               </button>
               
@@ -94,10 +96,26 @@ export default function Header() {
                     exit={{ opacity: 0, y: -10 }}
                     className="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-50"
                   >
-                    <button className="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-t-lg">
+                    <button 
+                      onClick={() => {
+                        setLanguage('ru');
+                        setLangOpen(false);
+                      }}
+                      className={`w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 rounded-t-lg ${
+                        language === 'ru' ? 'bg-gold-50 text-gold-700 dark:bg-gold-900/20 dark:text-gold-400' : 'text-gray-700 dark:text-gray-300'
+                      }`}
+                    >
                       🇷🇺 Русский
                     </button>
-                    <button className="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg">
+                    <button 
+                      onClick={() => {
+                        setLanguage('en');
+                        setLangOpen(false);
+                      }}
+                      className={`w-full px-4 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-lg ${
+                        language === 'en' ? 'bg-gold-50 text-gold-700 dark:bg-gold-900/20 dark:text-gold-400' : 'text-gray-700 dark:text-gray-300'
+                      }`}
+                    >
                       🇺🇸 English
                     </button>
                   </motion.div>
@@ -106,10 +124,10 @@ export default function Header() {
             </div>
             
             <Button variant="outline" size="sm">
-              Документация
+              {t('header.documentation')}
             </Button>
             <Button size="sm">
-              ПОМЕНЯТЬ COBA
+              {t('header.exchange')}
             </Button>
           </div>
 
@@ -145,17 +163,31 @@ export default function Header() {
               ))}
               <div className="pt-4 space-y-2">
                 <div className="flex items-center justify-between p-2 border-t border-gray-200 dark:border-gray-700">
-                  <span className="text-sm text-gray-600 dark:text-gray-400">Язык:</span>
+                  <span className="text-sm text-gray-600 dark:text-gray-400">{language === 'ru' ? 'Язык:' : 'Language:'}</span>
                   <div className="flex space-x-2">
-                    <button className="px-2 py-1 text-xs bg-gold-500 text-white rounded">RU</button>
-                    <button className="px-2 py-1 text-xs text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">EN</button>
+                    <button 
+                      onClick={() => setLanguage('ru')}
+                      className={`px-2 py-1 text-xs rounded ${
+                        language === 'ru' ? 'bg-gold-500 text-white' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'
+                      }`}
+                    >
+                      RU
+                    </button>
+                    <button 
+                      onClick={() => setLanguage('en')}
+                      className={`px-2 py-1 text-xs rounded ${
+                        language === 'en' ? 'bg-gold-500 text-white' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'
+                      }`}
+                    >
+                      EN
+                    </button>
                   </div>
                 </div>
                 <Button variant="outline" size="sm" className="w-full">
-                  Документация
+                  {t('header.documentation')}
                 </Button>
                 <Button size="sm" className="w-full">
-                  ПОМЕНЯТЬ COBA
+                  {t('header.exchange')}
                 </Button>
               </div>
             </div>

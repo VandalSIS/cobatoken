@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
+import { LanguageProvider } from '@/contexts/LanguageContext';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -88,7 +89,9 @@ export default function RootLayout({
         <meta name="theme-color" content="#f59e0b" />
       </head>
       <body className={`${inter.className} antialiased`}>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

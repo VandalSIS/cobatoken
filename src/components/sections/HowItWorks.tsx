@@ -3,29 +3,31 @@
 import { motion } from 'framer-motion';
 import { ShoppingCart, Shield, Coins } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/Card';
-
-const steps = [
-  {
-    icon: ShoppingCart,
-    title: 'ПОМЕНЯТЬ токены COBA',
-    description: 'Обменивайте токены COBA через нашу безопасную платформу используя ETH, USDT или фиатную валюту.',
-    step: '01',
-  },
-  {
-    icon: Shield,
-    title: 'Верификация золотых резервов',
-    description: 'Каждый токен обеспечен физическими золотыми резервами, хранящимися в сертифицированных хранилищах с ежемесячными аудитами.',
-    step: '02',
-  },
-  {
-    icon: Coins,
-    title: 'Держите или торгуйте',
-    description: 'Используйте ваши токены COBA для торговли или обменивайте на физическое золото (применяются минимальные суммы).',
-    step: '03',
-  },
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function HowItWorks() {
+  const { t } = useLanguage();
+
+  const steps = [
+    {
+      icon: ShoppingCart,
+      title: t('howItWorks.step1.title'),
+      description: t('howItWorks.step1.desc'),
+      step: '01',
+    },
+    {
+      icon: Shield,
+      title: t('howItWorks.step2.title'),
+      description: t('howItWorks.step2.desc'),
+      step: '02',
+    },
+    {
+      icon: Coins,
+      title: t('howItWorks.step3.title'),
+      description: t('howItWorks.step3.desc'),
+      step: '03',
+    },
+  ];
   return (
     <section className="py-20 bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -36,10 +38,10 @@ export default function HowItWorks() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Как работает COBA
+            {t('howItWorks.title')}
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Просто, безопасно и прозрачно. Наш трехэтапный процесс обеспечивает вам все преимущества криптовалюты с золотым обеспечением.
+            {t('howItWorks.description')}
           </p>
         </motion.div>
 
@@ -114,7 +116,7 @@ export default function HowItWorks() {
                   24/7
                 </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">
-                  Trading and liquidity
+                  Торговля и ликвидность
                 </div>
               </div>
               <div className="text-center">

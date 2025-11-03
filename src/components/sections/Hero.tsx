@@ -5,26 +5,28 @@ import { ArrowRight, Shield, TrendingUp, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { TOKEN_METRICS } from '@/lib/constants';
 import { formatCurrency, formatLargeNumber } from '@/lib/utils';
-
-const features = [
-  {
-    icon: Shield,
-    title: 'Золотое обеспечение',
-    description: 'Каждый токен обеспечен 9,6 граммами физического золота',
-  },
-  {
-    icon: TrendingUp,
-    title: 'Стабильная стоимость',
-    description: 'Сочетает стабильность золота с инновациями криптовалют',
-  },
-  {
-    icon: Zap,
-    title: 'Быстрые транзакции',
-    description: 'Основан на Ethereum для быстрых и безопасных переводов',
-  },
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Hero() {
+  const { t } = useLanguage();
+
+  const features = [
+    {
+      icon: Shield,
+      title: t('features.goldBacking'),
+      description: t('features.goldBackingDesc'),
+    },
+    {
+      icon: TrendingUp,
+      title: t('features.stableValue'),
+      description: t('features.stableValueDesc'),
+    },
+    {
+      icon: Zap,
+      title: t('features.fastTransactions'),
+      description: t('features.fastTransactionsDesc'),
+    },
+  ];
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Background Pattern */}
@@ -50,17 +52,16 @@ export default function Hero() {
               className="mb-6"
             >
               <span className="inline-block px-4 py-2 rounded-full bg-gold-500/20 text-gold-400 text-sm font-medium mb-4">
-                🏆 Криптовалюта с золотым обеспечением
+                🏆 {t('hero.badge')}
               </span>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Будущее
+                {t('hero.title')}
                 <span className="block bg-gold-gradient bg-clip-text text-transparent">
-                  Стабильных Цифровых Активов
+                  {t('hero.subtitle')}
                 </span>
               </h1>
               <p className="text-xl text-gray-300 mb-8 max-w-lg">
-                COBA - децентрализованная цифровая валюта, разработанная ICC "Universum" для повышения безопасности транзакций. 
-                Каждый токен обеспечен 9,6 граммами золота с резервами, превышающими объем выпуска.
+                {t('hero.description')}
               </p>
             </motion.div>
 
@@ -71,11 +72,11 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 mb-12"
             >
               <Button size="lg" className="group">
-                ПОМЕНЯТЬ токены COBA
+                {t('hero.buyTokens')}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg">
-                Скачать документацию
+                {t('hero.downloadDocs')}
               </Button>
             </motion.div>
 
@@ -90,19 +91,19 @@ export default function Hero() {
                 <div className="text-2xl font-bold text-gold-400">
                   {formatCurrency(TOKEN_METRICS.currentPrice)}
                 </div>
-                <div className="text-sm text-gray-400">Текущая цена</div>
+                <div className="text-sm text-gray-400">{t('hero.currentPrice')}</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-gold-400">
                   {formatLargeNumber(TOKEN_METRICS.totalSupply)}
                 </div>
-                <div className="text-sm text-gray-400">Общий выпуск</div>
+                <div className="text-sm text-gray-400">{t('hero.totalSupply')}</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-gold-400">
                   {TOKEN_METRICS.goldBacking}г
                 </div>
-                <div className="text-sm text-gray-400">Золота на токен</div>
+                <div className="text-sm text-gray-400">{t('hero.goldPerToken')}</div>
               </div>
             </motion.div>
           </motion.div>

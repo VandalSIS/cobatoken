@@ -21,12 +21,12 @@ const contactSchema = z.object({
 });
 
 const interestTypes = [
-  { value: 'investment', label: 'Investment Opportunities' },
-  { value: 'partnership', label: 'Partnership Inquiries' },
-  { value: 'technical', label: 'Technical Support' },
-  { value: 'media', label: 'Media & Press' },
-  { value: 'general', label: 'General Questions' },
-  { value: 'other', label: 'Other' },
+  { value: 'investment', label: 'Инвестиционные возможности' },
+  { value: 'partnership', label: 'Партнерские запросы' },
+  { value: 'technical', label: 'Техническая поддержка' },
+  { value: 'media', label: 'Медиа и пресса' },
+  { value: 'general', label: 'Общие вопросы' },
+  { value: 'other', label: 'Другое' },
 ];
 
 const contactMethods = [

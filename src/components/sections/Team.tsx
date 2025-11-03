@@ -4,8 +4,10 @@ import { motion } from 'framer-motion';
 import { Linkedin, Twitter } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/Card';
 import { TEAM_MEMBERS } from '@/lib/constants';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Team() {
+  const { t } = useLanguage();
   return (
     <section className="py-20 bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -16,10 +18,10 @@ export default function Team() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Наша команда
+            {t('team.title')}
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Опытные специалисты в области экологии, финансовых технологий и устойчивого развития, работающие над созданием лучшего будущего.
+            {t('team.description')}
           </p>
         </motion.div>
 

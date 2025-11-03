@@ -5,8 +5,10 @@ import { ExternalLink, Calendar, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { NEWS_ITEMS } from '@/lib/constants';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function News() {
+  const { t } = useLanguage();
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', {
@@ -26,10 +28,10 @@ export default function News() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Последние новости и обновления
+            {t('news.title')}
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Будьте в курсе развития токенов COBA, партнерских отношений и отраслевых инсайтов.
+            {t('news.description')}
           </p>
         </motion.div>
 

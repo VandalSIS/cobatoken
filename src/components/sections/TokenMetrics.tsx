@@ -5,46 +5,48 @@ import { TrendingUp, Users, DollarSign, Coins } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/Card';
 import { TOKEN_METRICS } from '@/lib/constants';
 import { formatCurrency, formatLargeNumber, formatNumber } from '@/lib/utils';
-
-const metrics = [
-  {
-    icon: DollarSign,
-    label: 'Current Price',
-    value: formatCurrency(TOKEN_METRICS.currentPrice),
-    change: '+5.2%',
-    positive: true,
-  },
-  {
-    icon: TrendingUp,
-    label: 'Market Cap',
-    value: formatCurrency(TOKEN_METRICS.marketCap),
-    change: '+12.8%',
-    positive: true,
-  },
-  {
-    icon: Coins,
-    label: 'Total Supply',
-    value: formatLargeNumber(TOKEN_METRICS.totalSupply),
-    change: 'Fixed',
-    positive: null,
-  },
-  {
-    icon: Users,
-    label: 'Gold Backing',
-    value: `${TOKEN_METRICS.goldBacking}g`,
-    change: 'Per Token',
-    positive: null,
-  },
-];
-
-const additionalStats = [
-  { label: 'Max Supply', value: formatLargeNumber(TOKEN_METRICS.maxSupply) },
-  { label: 'Annual Emission', value: formatLargeNumber(TOKEN_METRICS.annualEmission) },
-  { label: 'Decimals', value: TOKEN_METRICS.decimals.toString() },
-  { label: 'Smallest Unit', value: TOKEN_METRICS.smallestUnit },
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function TokenMetrics() {
+  const { t } = useLanguage();
+
+  const metrics = [
+    {
+      icon: DollarSign,
+      label: t('metrics.currentPrice'),
+      value: formatCurrency(TOKEN_METRICS.currentPrice),
+      change: '+5.2%',
+      positive: true,
+    },
+    {
+      icon: TrendingUp,
+      label: t('metrics.marketCap'),
+      value: formatCurrency(TOKEN_METRICS.marketCap),
+      change: '+12.8%',
+      positive: true,
+    },
+    {
+      icon: Coins,
+      label: t('metrics.totalSupply'),
+      value: formatLargeNumber(TOKEN_METRICS.totalSupply),
+      change: t('metrics.fixed'),
+      positive: null,
+    },
+    {
+      icon: Users,
+      label: t('metrics.goldBacking'),
+      value: `${TOKEN_METRICS.goldBacking}г`,
+      change: t('metrics.perToken'),
+      positive: null,
+    },
+  ];
+
+  const additionalStats = [
+    { label: t('metrics.maxSupply'), value: formatLargeNumber(TOKEN_METRICS.maxSupply) },
+    { label: t('metrics.annualEmission'), value: formatLargeNumber(TOKEN_METRICS.annualEmission) },
+    { label: t('metrics.decimals'), value: TOKEN_METRICS.decimals.toString() },
+    { label: t('metrics.smallestUnit'), value: TOKEN_METRICS.smallestUnit },
+  ];
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -55,10 +57,10 @@ export default function TokenMetrics() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Token Metrics
+            {t('metrics.title')}
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Real-time data and key statistics for COBA token, showcasing our commitment to transparency and growth.
+            {t('metrics.description')}
           </p>
         </motion.div>
 
@@ -120,7 +122,7 @@ export default function TokenMetrics() {
           className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg"
         >
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-            Token Details
+            {t('metrics.tokenDetails')}
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {additionalStats.map((stat, index) => (
@@ -156,7 +158,7 @@ export default function TokenMetrics() {
               transition={{ duration: 2, repeat: Infinity }}
               className="w-3 h-3 bg-green-400 rounded-full"
             />
-            <span className="text-lg font-medium">Live Price:</span>
+            <span className="text-lg font-medium">{t('metrics.livePrice')}:</span>
             <span className="text-2xl font-bold">
               {formatCurrency(TOKEN_METRICS.currentPrice)}
             </span>

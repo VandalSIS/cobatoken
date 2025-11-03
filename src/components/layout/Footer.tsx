@@ -5,27 +5,7 @@ import { motion } from 'framer-motion';
 import { Twitter, MessageCircle, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { SOCIAL_LINKS, CONTACT_INFO } from '@/lib/constants';
-
-const footerLinks = {
-  company: [
-    { name: 'О нас', href: '/about' },
-    { name: 'Токеномика', href: '/tokenomics' },
-    { name: 'Команда', href: '/about#team' },
-    { name: 'Карьера', href: '/careers' },
-  ],
-  resources: [
-    { name: 'Документация', href: '/whitepaper.pdf' },
-    { name: 'Руководства', href: '/docs' },
-    { name: 'Вопросы и ответы', href: '/#faq' },
-    { name: 'Блог', href: '/blog' },
-  ],
-  legal: [
-    { name: 'Политика конфиденциальности', href: '/privacy' },
-    { name: 'Условия использования', href: '/terms' },
-    { name: 'Политика cookies', href: '/cookies' },
-    { name: 'Отказ от ответственности', href: '/disclaimer' },
-  ],
-};
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const socialIcons = [
   { name: 'Twitter', icon: Twitter, href: SOCIAL_LINKS.twitter },
@@ -35,6 +15,28 @@ const socialIcons = [
 ];
 
 export default function Footer() {
+  const { t } = useLanguage();
+
+  const footerLinks = {
+    company: [
+      { name: t('nav.about'), href: '/about' },
+      { name: t('nav.tokenomics'), href: '/tokenomics' },
+      { name: 'Команда', href: '/about#team' },
+      { name: 'Карьера', href: '/careers' },
+    ],
+    resources: [
+      { name: 'Документация', href: '/whitepaper.pdf' },
+      { name: 'Руководства', href: '/docs' },
+      { name: 'Вопросы и ответы', href: '/#faq' },
+      { name: 'Блог', href: '/blog' },
+    ],
+    legal: [
+      { name: 'Политика конфиденциальности', href: '/privacy' },
+      { name: 'Условия использования', href: '/terms' },
+      { name: 'Политика cookies', href: '/cookies' },
+      { name: 'Отказ от ответственности', href: '/disclaimer' },
+    ],
+  };
   return (
     <footer className="bg-gray-900 text-white">
       {/* Newsletter Section */}
@@ -76,7 +78,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">COBA</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
-              Будущее криптовалюты с золотым обеспечением. Сочетаем стабильность драгоценных металлов с инновациями блокчейн-технологий.
+              {t('footer.description')}
             </p>
             <div className="space-y-2 text-sm text-gray-400">
               <div className="flex items-center space-x-2">
@@ -96,7 +98,7 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Компания</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">{t('footer.company')}</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
@@ -113,7 +115,7 @@ export default function Footer() {
 
           {/* Resources Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Ресурсы</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">{t('footer.resources')}</h4>
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
@@ -130,7 +132,7 @@ export default function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Правовая информация</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">{t('footer.legal')}</h4>
             <ul className="space-y-2">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
@@ -167,7 +169,7 @@ export default function Footer() {
             })}
           </div>
           <p className="text-gray-400 text-sm">
-            © 2024 ICC "Universum" COBA Token. Все права защищены.
+            {t('footer.copyright')}
           </p>
         </div>
       </div>

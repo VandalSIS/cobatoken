@@ -5,8 +5,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { FAQ_ITEMS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function FAQ() {
+  const { t } = useLanguage();
   const [openItems, setOpenItems] = useState<string[]>([]);
 
   const toggleItem = (id: string) => {
@@ -27,10 +29,10 @@ export default function FAQ() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Часто задаваемые вопросы
+            {t('faq.title')}
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Получите ответы на распространенные вопросы о токенах COBA, золотом обеспечении и нашей платформе.
+            {t('faq.description')}
           </p>
         </motion.div>
 
@@ -92,16 +94,16 @@ export default function FAQ() {
           viewport={{ once: true }}
           className="mt-16 text-center bg-gold-gradient rounded-2xl p-8 text-white"
         >
-          <h3 className="text-2xl font-bold mb-4">Остались вопросы?</h3>
+          <h3 className="text-2xl font-bold mb-4">{t('faq.stillQuestions')}</h3>
           <p className="text-lg opacity-90 mb-6">
-            Наша команда готова помочь вам понять токены COBA и начать работу с криптовалютой с золотым обеспечением.
+            {t('faq.teamHelp')}
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-white text-gold-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
-            Связаться с поддержкой
+            {t('faq.contactSupport')}
           </motion.button>
         </motion.div>
       </div>

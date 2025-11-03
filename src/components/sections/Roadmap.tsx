@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle, Clock, Calendar } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/Card';
 import { ROADMAP } from '@/lib/constants';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const statusIcons = {
   completed: CheckCircle,
@@ -18,6 +19,7 @@ const statusColors = {
 };
 
 export default function Roadmap() {
+  const { t } = useLanguage();
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -28,10 +30,10 @@ export default function Roadmap() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Development Roadmap
+            {t('roadmap.title')}
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Our strategic milestones and achievements in building the future of gold-backed cryptocurrency.
+            {t('roadmap.description')}
           </p>
         </motion.div>
 
@@ -126,10 +128,9 @@ export default function Roadmap() {
           viewport={{ once: true }}
           className="mt-16 text-center bg-gold-gradient rounded-2xl p-8 text-white"
         >
-          <h3 className="text-2xl font-bold mb-4">Взгляд в будущее</h3>
+          <h3 className="text-2xl font-bold mb-4">{t('roadmap.futureVision')}</h3>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            Наша дорожная карта продолжается после 2024 года с планами по экологическим инициативам, 
-            международному сотрудничеству и инновационным проектам устойчивого развития.
+            {t('roadmap.futureDescription')}
           </p>
         </motion.div>
       </div>
