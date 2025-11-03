@@ -228,6 +228,13 @@ const translations = {
     'contact.interest.general': 'Общие вопросы',
     'contact.interest.other': 'Другое',
     
+    // Contact Page Social Section
+    'contact.joinCommunity': 'Присоединяйтесь к нашему сообществу',
+    'contact.socialDescription': 'Свяжитесь с нами в социальных сетях для получения последних обновлений, новостей и обсуждений в сообществе.',
+    'contact.quickQuestions': 'Быстрые вопросы?',
+    'contact.faqDescription': 'Прежде чем обращаться к нам, ознакомьтесь с разделом FAQ для получения ответов на распространенные вопросы о токене COBA.',
+    'contact.viewFaq': 'Посмотреть FAQ',
+    
     // Tokenomics Page
     'tokenomics.title': 'Токеномика COBA',
     'tokenomics.subtitle': 'Прозрачная и устойчивая экономическая модель',
@@ -505,6 +512,13 @@ const translations = {
     'contact.interest.media': 'Media & Press',
     'contact.interest.general': 'General Questions',
     'contact.interest.other': 'Other',
+    
+    // Contact Page Social Section
+    'contact.joinCommunity': 'Join Our Community',
+    'contact.socialDescription': 'Connect with us on social media for the latest updates, news, and community discussions.',
+    'contact.quickQuestions': 'Quick Questions?',
+    'contact.faqDescription': 'Before reaching out, check our FAQ section for answers to common questions about COBA token.',
+    'contact.viewFaq': 'View FAQ',
     
     // Tokenomics Page
     'tokenomics.title': 'COBA Tokenomics',
