@@ -59,6 +59,10 @@ const translations = {
     'howItWorks.step2.desc': 'Каждый токен обеспечен физическими золотыми резервами, хранящимися в сертифицированных хранилищах с ежемесячными аудитами.',
     'howItWorks.step3.title': 'Держите или торгуйте',
     'howItWorks.step3.desc': 'Используйте ваши токены COBA для торговли или обменивайте на физическое золото (применяются минимальные суммы).',
+    'howItWorks.whyChoose': 'Почему выбирают криптовалюту с золотым обеспечением?',
+    'howItWorks.goldHistory': 'Лет золота как средства сохранения стоимости',
+    'howItWorks.trading247': 'Торговля и ликвидность',
+    'howItWorks.goldBacked': 'Обеспечено физическим золотом',
     
     // Features
     'features.goldBacking': 'Золотое обеспечение',
@@ -223,6 +227,10 @@ const translations = {
     'howItWorks.step2.desc': 'Each token is backed by physical gold reserves stored in certified vaults with monthly audits.',
     'howItWorks.step3.title': 'Hold or Trade',
     'howItWorks.step3.desc': 'Use your COBA tokens for trading or exchange for physical gold (minimum amounts apply).',
+    'howItWorks.whyChoose': 'Why Choose Gold-Backed Cryptocurrency?',
+    'howItWorks.goldHistory': 'Years of gold as store of value',
+    'howItWorks.trading247': 'Trading and liquidity',
+    'howItWorks.goldBacked': 'Backed by physical gold',
     
     // Features
     'features.goldBacking': 'Gold-Backed Security',

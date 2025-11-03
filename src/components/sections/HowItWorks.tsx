@@ -100,7 +100,7 @@ export default function HowItWorks() {
         >
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Why Choose Gold-Backed Cryptocurrency?
+              {t('howItWorks.whyChoose')}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               <div className="text-center">
@@ -108,7 +108,7 @@ export default function HowItWorks() {
                   5,000+
                 </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">
-                  Years of gold as store of value
+                  {t('howItWorks.goldHistory')}
                 </div>
               </div>
               <div className="text-center">
@@ -116,7 +116,7 @@ export default function HowItWorks() {
                   24/7
                 </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">
-                  Торговля и ликвидность
+                  {t('howItWorks.trading247')}
                 </div>
               </div>
               <div className="text-center">
@@ -124,7 +124,7 @@ export default function HowItWorks() {
                   100%
                 </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">
-                  Backed by physical gold
+                  {t('howItWorks.goldBacked')}
                 </div>
               </div>
             </div>
