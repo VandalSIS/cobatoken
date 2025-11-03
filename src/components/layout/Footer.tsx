@@ -167,7 +167,7 @@ export default function Footer() {
             })}
           </div>
           <p className="text-gray-400 text-sm">
-            © 2024 COBA Token. All rights reserved.
+            © 2024 ICC "Universum" COBA Token. Все права защищены.
           </p>
         </div>
       </div>

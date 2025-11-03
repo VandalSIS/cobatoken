@@ -56,7 +56,7 @@ export default function PrivacyPage() {
               Your privacy is fundamental to our relationship. Learn how we collect, use, and protect your personal information.
             </p>
             <p className="text-sm text-gray-400">
-              Last updated: January 1, 2024
+              Последнее обновление: 1 декабря 2024
             </p>
           </motion.div>
         </div>

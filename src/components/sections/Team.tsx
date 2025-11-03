@@ -16,10 +16,10 @@ export default function Team() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Meet Our Team
+            Наша команда
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Experienced professionals from finance, technology, and blockchain industries working together to revolutionize digital assets.
+            Опытные специалисты в области экологии, финансовых технологий и устойчивого развития, работающие над созданием лучшего будущего.
           </p>
         </motion.div>
 

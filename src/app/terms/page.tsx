@@ -56,7 +56,7 @@ export default function TermsPage() {
               Please read these terms carefully before using COBA Token services. These terms govern your use of our platform and services.
             </p>
             <p className="text-sm text-gray-400">
-              Last updated: January 1, 2024
+              Последнее обновление: 1 декабря 2024
             </p>
           </motion.div>
         </div>
