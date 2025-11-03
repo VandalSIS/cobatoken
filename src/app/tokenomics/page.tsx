@@ -25,12 +25,6 @@ const priceHistory = [
   { month: 'Jun', price: 0.0024 },
 ];
 
-const ecoPrograms = [
-  { program: 'Образовательные инициативы', impact: 'Высокий', participants: '1000+' },
-  { program: 'Экологические проекты', impact: 'Средний', participants: '500+' },
-  { program: 'Социальная поддержка', impact: 'Высокий', participants: '2000+' },
-  { program: 'Устойчивое развитие', impact: 'Очень высокий', participants: '3000+' },
-];
 
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
@@ -50,6 +44,13 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 
 export default function TokenomicsPage() {
   const { t } = useLanguage();
+
+  const ecoPrograms = [
+    { program: t('tokenomics.ecoPrograms.educational'), impact: t('tokenomics.ecoPrograms.high'), participants: '1000+' },
+    { program: t('tokenomics.ecoPrograms.environmental'), impact: t('tokenomics.ecoPrograms.medium'), participants: '500+' },
+    { program: t('tokenomics.ecoPrograms.social'), impact: t('tokenomics.ecoPrograms.high'), participants: '2000+' },
+    { program: t('tokenomics.ecoPrograms.sustainable'), impact: t('tokenomics.ecoPrograms.veryHigh'), participants: '3000+' },
+  ];
 
   const utilityData = [
     { category: t('tokenomics.trading'), percentage: 45, color: '#F59E0B' },
@@ -75,14 +76,10 @@ export default function TokenomicsPage() {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              COBA
-              <span className="block bg-gold-gradient bg-clip-text text-transparent">
-                Tokenomics
-              </span>
+              {t('tokenomics.title')}
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive analysis of COBA token economics, distribution, utility, and long-term value proposition 
-              backed by physical gold reserves.
+              {t('tokenomics.comprehensive')}
             </p>
           </motion.div>
         </div>
@@ -98,10 +95,10 @@ export default function TokenomicsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Token Overview
+              {t('tokenomics.overview')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Essential metrics and key information about COBA token structure and backing.
+              {t('tokenomics.overviewDesc')}
             </p>
           </motion.div>
 
@@ -151,10 +148,10 @@ export default function TokenomicsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Token Distribution
+              {t('tokenomics.distribution')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Transparent allocation of COBA tokens across different categories to ensure sustainable growth and community benefit.
+              {t('tokenomics.distributionDesc')}
             </p>
           </motion.div>
 
@@ -166,7 +163,7 @@ export default function TokenomicsPage() {
             >
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-center">Distribution Breakdown</CardTitle>
+                  <CardTitle className="text-center">{t('tokenomics.distributionBreakdown')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ResponsiveContainer width="100%" height={400}>
@@ -241,16 +238,16 @@ export default function TokenomicsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Emission Schedule
+              {t('tokenomics.emission')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Controlled token release schedule ensuring sustainable growth while maintaining gold backing integrity.
+              {t('tokenomics.emissionDesc')}
             </p>
           </motion.div>
 
           <Card>
             <CardHeader>
-              <CardTitle className="text-center">Annual Token Emission</CardTitle>
+              <CardTitle className="text-center">{t('tokenomics.annualEmission')}</CardTitle>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={400}>
@@ -259,7 +256,7 @@ export default function TokenomicsPage() {
                   <XAxis dataKey="year" />
                   <YAxis tickFormatter={(value) => formatLargeNumber(value)} />
                   <Tooltip content={<CustomTooltip />} />
-                  <Bar dataKey="tokens" fill="#F59E0B" name="Annual Emission" />
+                  <Bar dataKey="tokens" fill="#F59E0B" name={t('tokenomics.annualEmissionLabel')} />
                 </BarChart>
               </ResponsiveContainer>
             </CardContent>
@@ -267,9 +264,9 @@ export default function TokenomicsPage() {
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { label: 'Annual Emission', value: formatLargeNumber(TOKEN_METRICS.annualEmission), desc: 'Tokens per year' },
-              { label: 'Max Supply', value: formatLargeNumber(TOKEN_METRICS.maxSupply), desc: 'Total cap' },
-              { label: 'Emission Period', value: '4 Years', desc: 'Until max supply' },
+              { label: t('tokenomics.annualEmissionLabel'), value: formatLargeNumber(TOKEN_METRICS.annualEmission), desc: t('tokenomics.tokensPerYear') },
+              { label: t('tokenomics.maxSupplyLabel'), value: formatLargeNumber(TOKEN_METRICS.maxSupply), desc: t('tokenomics.totalCap') },
+              { label: t('tokenomics.emissionPeriod'), value: t('tokenomics.fourYears'), desc: t('tokenomics.untilMaxSupply') },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -307,10 +304,10 @@ export default function TokenomicsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Token Utility
+              {t('tokenomics.utility')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Multiple use cases and utility functions that drive demand and value for COBA tokens.
+              {t('tokenomics.utilityDesc')}
             </p>
           </motion.div>
 
@@ -322,7 +319,7 @@ export default function TokenomicsPage() {
             >
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-center">Utility Distribution</CardTitle>
+                  <CardTitle className="text-center">{t('tokenomics.utilityDistribution')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ResponsiveContainer width="100%" height={300}>
@@ -352,11 +349,11 @@ export default function TokenomicsPage() {
             >
               <div className="space-y-6">
                 {[
-                  { icon: TrendingUp, title: 'Торговля и инвестиции', desc: 'Основная торговая пара на биржах с высокой ликвидностью' },
-                  { icon: Shield, title: 'Экологические программы', desc: 'Участие в программах устойчивого развития и экологических инициативах' },
-                  { icon: Users, title: 'DeFi интеграция', desc: 'Возможности кредитования, заимствования и фарминга доходности' },
-                  { icon: DollarSign, title: 'Платежи', desc: 'Использование для платежей и транзакций в нашей экосистеме' },
-                  { icon: Award, title: 'Управление', desc: 'Голосование за обновления протокола и предложения сообщества' },
+                  { icon: TrendingUp, title: t('tokenomics.tradingInvestments'), desc: t('tokenomics.tradingInvestmentsDesc') },
+                  { icon: Shield, title: t('tokenomics.ecoProgramsTitle'), desc: t('tokenomics.ecoProgramsDesc') },
+                  { icon: Users, title: t('tokenomics.defiIntegration'), desc: t('tokenomics.defiIntegrationDesc') },
+                  { icon: DollarSign, title: t('tokenomics.paymentsTitle'), desc: t('tokenomics.paymentsDesc') },
+                  { icon: Award, title: t('tokenomics.governance'), desc: t('tokenomics.governanceDesc') },
                 ].map((utility, index) => {
                   const Icon = utility.icon;
                   return (
@@ -398,10 +395,10 @@ export default function TokenomicsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Экологические программы
+              {t('tokenomics.ecoProgramsTitle')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Участвуйте в программах устойчивого развития и экологических инициативах ICC "Universum".
+              {t('tokenomics.ecoProgramsDesc')}
             </p>
           </motion.div>
 
@@ -461,7 +458,7 @@ export default function TokenomicsPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle className="text-center">6-Month Price History</CardTitle>
+              <CardTitle className="text-center">{t('tokenomics.priceHistory')}</CardTitle>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={400}>
