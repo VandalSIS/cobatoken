@@ -238,12 +238,12 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Why Choose COBA
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Our commitment to excellence, security, and innovation sets us apart in the cryptocurrency space.
-            </p>
+             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+               Почему выбирают COBA
+             </h2>
+             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+               Наша приверженность к совершенству, безопасности и инновациям выделяет нас в пространстве криптовалют.
+             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -295,12 +295,12 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Our Journey
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Key milestones in our mission to revolutionize gold-backed cryptocurrency.
-            </p>
+             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+               Наш путь
+             </h2>
+             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+               Ключевые этапы нашей миссии по созданию криптовалюты с золотым обеспечением и устойчивому развитию.
+             </p>
           </motion.div>
 
           <div className="relative">
@@ -361,319 +361,25 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Join the Gold-Backed Revolution?
-            </h2>
-            <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-              Be part of the future of stable digital assets. Start your journey with COBA token today.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" size="lg">
-                Buy COBA Tokens
-              </Button>
-              <Button variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-gold-600">
-                Learn More
-              </Button>
-            </div>
+             <h2 className="text-3xl md:text-4xl font-bold mb-6">
+               Готовы присоединиться к революции золотого обеспечения?
+             </h2>
+             <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+               Станьте частью будущего стабильных цифровых активов. Начните свой путь с токенами COBA уже сегодня.
+             </p>
+             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+               <Button variant="secondary" size="lg">
+                 ПОМЕНЯТЬ токены COBA
+               </Button>
+               <Button variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-gold-600">
+                 Узнать больше
+               </Button>
+             </div>
           </motion.div>
         </div>
       </section>
     </Layout>
   );
-}
-
-            whileInView={{ opacity: 1, y: 0 }}
-
-            viewport={{ once: true }}
-
-            className="text-center mb-16"
-
-          >
-
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-
-              Why Choose COBA
-
-            </h2>
-
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-
-              Our commitment to excellence, security, and innovation sets us apart in the cryptocurrency space.
-
-            </p>
-
-          </motion.div>
-
-
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            {features.map((feature, index) => {
-
-              const Icon = feature.icon;
-
-              return (
-
-                <motion.div
-
-                  key={feature.title}
-
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-
-                  whileInView={{ opacity: 1, x: 0 }}
-
-                  viewport={{ once: true }}
-
-                  transition={{ delay: index * 0.1 }}
-
-                >
-
-                  <Card className="h-full">
-
-                    <CardContent className="p-8">
-
-                      <div className="flex items-start space-x-4">
-
-                        <div className="p-3 bg-gold-100 dark:bg-gold-900/20 rounded-xl">
-
-                          <Icon className="h-8 w-8 text-gold-600 dark:text-gold-400" />
-
-                        </div>
-
-                        <div className="flex-1">
-
-                          <div className="flex items-center justify-between mb-3">
-
-                            <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-
-                              {feature.title}
-
-                            </h3>
-
-                            <span className="text-sm font-medium text-gold-600 dark:text-gold-400 bg-gold-100 dark:bg-gold-900/20 px-3 py-1 rounded-full">
-
-                              {feature.stats}
-
-                            </span>
-
-                          </div>
-
-                          <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-
-                            {feature.description}
-
-                          </p>
-
-                        </div>
-
-                      </div>
-
-                    </CardContent>
-
-                  </Card>
-
-                </motion.div>
-
-              );
-
-            })}
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-
-      {/* Company Timeline */}
-
-      <section className="py-20 bg-gray-50 dark:bg-gray-800">
-
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-          <motion.div
-
-            initial={{ opacity: 0, y: 20 }}
-
-            whileInView={{ opacity: 1, y: 0 }}
-
-            viewport={{ once: true }}
-
-            className="text-center mb-16"
-
-          >
-
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-
-              Our Journey
-
-            </h2>
-
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-
-              Key milestones in our mission to revolutionize gold-backed cryptocurrency.
-
-            </p>
-
-          </motion.div>
-
-
-
-          <div className="relative">
-
-            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gold-300 dark:bg-gold-600" />
-
-            
-
-            <div className="space-y-12">
-
-              {milestones.map((milestone, index) => (
-
-                <motion.div
-
-                  key={milestone.year}
-
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-
-                  whileInView={{ opacity: 1, x: 0 }}
-
-                  viewport={{ once: true }}
-
-                  transition={{ delay: index * 0.1 }}
-
-                  className={`relative flex items-center ${
-
-                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-
-                  }`}
-
-                >
-
-                  <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 z-10">
-
-                    <div className="w-8 h-8 bg-gold-500 rounded-full flex items-center justify-center">
-
-                      <div className="w-3 h-3 bg-white rounded-full" />
-
-                    </div>
-
-                  </div>
-
-
-
-                  <div className={`ml-16 md:ml-0 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'} md:w-1/2`}>
-
-                    <Card>
-
-                      <CardHeader>
-
-                        <div className="flex items-center space-x-4">
-
-                          <span className="text-2xl font-bold text-gold-600 dark:text-gold-400">
-
-                            {milestone.year}
-
-                          </span>
-
-                          <CardTitle className="text-xl">
-
-                            {milestone.title}
-
-                          </CardTitle>
-
-                        </div>
-
-                      </CardHeader>
-
-                      <CardContent>
-
-                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-
-                          {milestone.description}
-
-                        </p>
-
-                      </CardContent>
-
-                    </Card>
-
-                  </div>
-
-                </motion.div>
-
-              ))}
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-
-      {/* Team Section */}
-
-      <Team />
-
-
-
-      {/* CTA Section */}
-
-      <section className="py-20 bg-gold-gradient text-white">
-
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-
-          <motion.div
-
-            initial={{ opacity: 0, y: 20 }}
-
-            whileInView={{ opacity: 1, y: 0 }}
-
-            viewport={{ once: true }}
-
-          >
-
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-
-              Ready to Join the Gold-Backed Revolution?
-
-            </h2>
-
-            <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-
-              Be part of the future of stable digital assets. Start your journey with COBA token today.
-
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-
-              <Button variant="secondary" size="lg">
-
-                Buy COBA Tokens
-
-              </Button>
-
-              <Button variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-gold-600">
-
-                Learn More
-
-              </Button>
-
-            </div>
-
-          </motion.div>
-
-        </div>
-
-      </section>
-
-    </Layout>
-
-  );
-
 }
 
 

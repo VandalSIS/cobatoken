@@ -27,10 +27,10 @@ export default function FAQ() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Frequently Asked Questions
+            Часто задаваемые вопросы
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Get answers to common questions about COBA token, gold backing, and our platform.
+            Получите ответы на распространенные вопросы о токенах COBA, золотом обеспечении и нашей платформе.
           </p>
         </motion.div>
 
@@ -92,16 +92,16 @@ export default function FAQ() {
           viewport={{ once: true }}
           className="mt-16 text-center bg-gold-gradient rounded-2xl p-8 text-white"
         >
-          <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
+          <h3 className="text-2xl font-bold mb-4">Остались вопросы?</h3>
           <p className="text-lg opacity-90 mb-6">
-            Our team is here to help you understand COBA token and get started with gold-backed cryptocurrency.
+            Наша команда готова помочь вам понять токены COBA и начать работу с криптовалютой с золотым обеспечением.
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-white text-gold-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
-            Contact Support
+            Связаться с поддержкой
           </motion.button>
         </motion.div>
       </div>

@@ -8,22 +8,22 @@ import { SOCIAL_LINKS, CONTACT_INFO } from '@/lib/constants';
 
 const footerLinks = {
   company: [
-    { name: 'About Us', href: '/about' },
-    { name: 'Tokenomics', href: '/tokenomics' },
-    { name: 'Team', href: '/about#team' },
-    { name: 'Careers', href: '/careers' },
+    { name: 'О нас', href: '/about' },
+    { name: 'Токеномика', href: '/tokenomics' },
+    { name: 'Команда', href: '/about#team' },
+    { name: 'Карьера', href: '/careers' },
   ],
   resources: [
-    { name: 'Whitepaper', href: '/whitepaper.pdf' },
-    { name: 'Documentation', href: '/docs' },
-    { name: 'FAQ', href: '/#faq' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'Документация', href: '/whitepaper.pdf' },
+    { name: 'Руководства', href: '/docs' },
+    { name: 'Вопросы и ответы', href: '/#faq' },
+    { name: 'Блог', href: '/blog' },
   ],
   legal: [
-    { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Terms & Conditions', href: '/terms' },
-    { name: 'Cookie Policy', href: '/cookies' },
-    { name: 'Disclaimer', href: '/disclaimer' },
+    { name: 'Политика конфиденциальности', href: '/privacy' },
+    { name: 'Условия использования', href: '/terms' },
+    { name: 'Политика cookies', href: '/cookies' },
+    { name: 'Отказ от ответственности', href: '/disclaimer' },
   ],
 };
 
@@ -76,7 +76,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">COBA</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
-              The future of gold-backed cryptocurrency. Combining the stability of precious metals with the innovation of blockchain technology.
+              Будущее криптовалюты с золотым обеспечением. Сочетаем стабильность драгоценных металлов с инновациями блокчейн-технологий.
             </p>
             <div className="space-y-2 text-sm text-gray-400">
               <div className="flex items-center space-x-2">
@@ -96,7 +96,7 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Company</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">Компания</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
@@ -113,7 +113,7 @@ export default function Footer() {
 
           {/* Resources Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Resources</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">Ресурсы</h4>
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
@@ -130,7 +130,7 @@ export default function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Legal</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">Правовая информация</h4>
             <ul className="space-y-2">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
