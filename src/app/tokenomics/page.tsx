@@ -425,11 +425,11 @@ export default function TokenomicsPage() {
                         {program.impact}
                       </div>
                       <div className="text-sm text-gray-600 dark:text-gray-400">
-                        Уровень воздействия
+                        {t('tokenomics.impactLevel')}
                       </div>
                     </div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">
-                      Участники: {program.participants}
+                      {t('tokenomics.participants')}: {program.participants}
                     </div>
                   </CardContent>
                 </Card>
@@ -449,10 +449,10 @@ export default function TokenomicsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Динамика цены
+              {t('tokenomics.pricePerformance')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Исторические данные о ценах, показывающие стабильность и потенциал роста токена COBA.
+              {t('tokenomics.pricePerformanceDesc')}
             </p>
           </motion.div>
 
