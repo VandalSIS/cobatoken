@@ -11,6 +11,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { CONTACT_INFO, SOCIAL_LINKS } from '@/lib/constants';
 import { ContactFormData } from '@/types';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -29,30 +30,6 @@ const interestTypes = [
   { value: 'other', label: 'Другое' },
 ];
 
-const contactMethods = [
-  {
-    icon: Mail,
-    title: 'Email Us',
-    description: 'Send us an email and we\'ll respond within 24 hours',
-    contact: CONTACT_INFO.email,
-    href: `mailto:${CONTACT_INFO.email}`,
-  },
-  {
-    icon: Phone,
-    title: 'Call Us',
-    description: 'Speak directly with our team during business hours',
-    contact: CONTACT_INFO.phone,
-    href: `tel:${CONTACT_INFO.phone}`,
-  },
-  {
-    icon: MapPin,
-    title: 'Visit Us',
-    description: 'Our headquarters are open for scheduled meetings',
-    contact: CONTACT_INFO.address,
-    href: '#',
-  },
-];
-
 const socialLinks = [
   { icon: Twitter, href: SOCIAL_LINKS.twitter, label: 'Twitter' },
   { icon: MessageCircle, href: SOCIAL_LINKS.telegram, label: 'Telegram' },
@@ -61,6 +38,31 @@ const socialLinks = [
 ];
 
 export default function ContactPage() {
+  const { t } = useLanguage();
+
+  const contactMethods = [
+    {
+      icon: Mail,
+      title: t('contact.emailUs'),
+      description: t('contact.emailDescription'),
+      contact: CONTACT_INFO.email,
+      href: `mailto:${CONTACT_INFO.email}`,
+    },
+    {
+      icon: Phone,
+      title: t('contact.callUs'),
+      description: t('contact.callDescription'),
+      contact: CONTACT_INFO.phone,
+      href: `tel:${CONTACT_INFO.phone}`,
+    },
+    {
+      icon: MapPin,
+      title: t('contact.visitUs'),
+      description: t('contact.visitDescription'),
+      contact: CONTACT_INFO.address,
+      href: '#',
+    },
+  ];
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
@@ -110,14 +112,13 @@ export default function ContactPage() {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Get in
+              {t('contact.title')}
               <span className="block bg-gold-gradient bg-clip-text text-transparent">
-                Touch
+                {t('contact.subtitle')}
               </span>
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Have questions about COBA token? Want to explore partnership opportunities? 
-              Our team is here to help you navigate the future of gold-backed cryptocurrency.
+              {t('contact.description')}
             </p>
           </motion.div>
         </div>

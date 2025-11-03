@@ -5,7 +5,7 @@ import { Shield, Target, Users, TrendingUp, Award, Globe, Lock, Zap, Leaf, BookO
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import Team from '@/components/sections/Team';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const values = [
   {
@@ -81,6 +81,7 @@ const milestones = [
 ];
 
 export default function AboutPage() {
+  const { t } = useLanguage();
   return (
     <Layout>
       {/* Hero Section */}
@@ -99,14 +100,13 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                О проекте
+                {t('about.title')}
                 <span className="block bg-gold-gradient bg-clip-text text-transparent">
-                  ICC "Universum"
+                  {t('about.subtitle')}
                 </span>
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                ICC "Universum" - некоммерческая организация, объединяющая группы взаимосвязанных компаний и творческих коллективов пайщиков. 
-                В сотрудничестве с Агентством Общественной Безопасности (Швейцария) мы реализуем высокотехнологичные проекты для улучшения качества жизни.
+                {t('about.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg">
@@ -239,10 +239,10 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-               Почему выбирают COBA
+               {t('about.whyChoose')}
              </h2>
              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-               Наша приверженность к совершенству, безопасности и инновациям выделяет нас в пространстве криптовалют.
+               {t('about.whyDescription')}
              </p>
           </motion.div>
 
@@ -296,10 +296,10 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-               Наш путь
+               {t('about.ourJourney')}
              </h2>
              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-               Ключевые этапы нашей миссии по созданию криптовалюты с золотым обеспечением и устойчивому развитию.
+               {t('about.journeyDescription')}
              </p>
           </motion.div>
 
@@ -350,8 +350,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <Team />
 
       {/* CTA Section */}
       <section className="py-20 bg-gold-gradient text-white">
@@ -362,17 +360,17 @@ export default function AboutPage() {
             viewport={{ once: true }}
           >
              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-               Готовы присоединиться к революции золотого обеспечения?
+               {t('about.readyToJoin')}
              </h2>
              <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-               Станьте частью будущего стабильных цифровых активов. Начните свой путь с токенами COBA уже сегодня.
+               {t('about.joinDescription')}
              </p>
              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                <Button variant="secondary" size="lg">
-                 ПОМЕНЯТЬ токены COBA
+                 {t('hero.buyTokens')}
                </Button>
                <Button variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-gold-600">
-                 Узнать больше
+                 {t('about.getStarted')}
                </Button>
              </div>
           </motion.div>

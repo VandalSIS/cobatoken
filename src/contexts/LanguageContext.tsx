@@ -95,6 +95,29 @@ const translations = {
     'roadmap.description': 'Наш путь к революционизации криптовалют с золотым обеспечением через инновации и стратегические партнерства.',
     'roadmap.futureVision': 'Взгляд в будущее',
     'roadmap.futureDescription': 'Наша дорожная карта продолжается после 2024 года с планами по экологическим инициативам, международному сотрудничеству и инновационным проектам устойчивого развития.',
+    
+    // About Page
+    'about.title': 'О ICC "Universum"',
+    'about.subtitle': 'Революция в мире криптовалют с золотым обеспечением',
+    'about.description': 'ICC "Universum" — некоммерческая организация, созданная в сотрудничестве с Агентством Общественной Безопасности (Швейцария). Наша миссия — создание устойчивой экосистемы криптовалют с золотым обеспечением, которая сочетает финансовые инновации с экологической и социальной ответственностью.',
+    'about.whyChoose': 'Почему выбирают COBA',
+    'about.whyDescription': 'Наш подход к криптовалютам с золотым обеспечением основан на принципах прозрачности, безопасности и устойчивого развития.',
+    'about.ourJourney': 'Наш путь',
+    'about.journeyDescription': 'От создания некоммерческой организации до запуска революционной криптовалюты с золотым обеспечением.',
+    'about.readyToJoin': 'Готовы присоединиться к революции золотого обеспечения?',
+    'about.joinDescription': 'Станьте частью будущего стабильных цифровых активов с COBA Token.',
+    'about.getStarted': 'Начать сейчас',
+    
+    // Contact Page
+    'contact.title': 'Свяжитесь с нами',
+    'contact.subtitle': 'Готовы начать свой путь с COBA?',
+    'contact.description': 'У нас есть команда экспертов, готовых ответить на ваши вопросы и помочь вам понять преимущества криптовалюты с золотым обеспечением.',
+    'contact.emailUs': 'Напишите нам',
+    'contact.emailDescription': 'Отправьте нам письмо, и мы ответим в течение 24 часов',
+    'contact.callUs': 'Позвоните нам',
+    'contact.callDescription': 'Говорите напрямую с нашей командой в рабочее время',
+    'contact.visitUs': 'Посетите нас',
+    'contact.visitDescription': 'Наша штаб-квартира открыта для запланированных встреч',
   },
   en: {
     // Header
@@ -177,6 +200,29 @@ const translations = {
     'roadmap.description': 'Our journey to revolutionize gold-backed cryptocurrency through innovation and strategic partnerships.',
     'roadmap.futureVision': 'Looking Ahead',
     'roadmap.futureDescription': 'Our roadmap continues beyond 2024 with plans for environmental initiatives, international cooperation, and innovative sustainable development projects.',
+    
+    // About Page
+    'about.title': 'About ICC "Universum"',
+    'about.subtitle': 'Revolutionizing Gold-Backed Cryptocurrency',
+    'about.description': 'ICC "Universum" is a non-profit organization created in collaboration with the Public Safety Agency (Switzerland). Our mission is to create a sustainable ecosystem of gold-backed cryptocurrencies that combines financial innovation with environmental and social responsibility.',
+    'about.whyChoose': 'Why Choose COBA',
+    'about.whyDescription': 'Our approach to gold-backed cryptocurrency is built on principles of transparency, security, and sustainable development.',
+    'about.ourJourney': 'Our Journey',
+    'about.journeyDescription': 'From establishing a non-profit organization to launching revolutionary gold-backed cryptocurrency.',
+    'about.readyToJoin': 'Ready to Join the Gold-Backed Revolution?',
+    'about.joinDescription': 'Become part of the future of stable digital assets with COBA Token.',
+    'about.getStarted': 'Get Started',
+    
+    // Contact Page
+    'contact.title': 'Contact Us',
+    'contact.subtitle': 'Ready to Start Your COBA Journey?',
+    'contact.description': 'We have a team of experts ready to answer your questions and help you understand the benefits of gold-backed cryptocurrency.',
+    'contact.emailUs': 'Email Us',
+    'contact.emailDescription': 'Send us an email and we\'ll respond within 24 hours',
+    'contact.callUs': 'Call Us',
+    'contact.callDescription': 'Speak directly with our team during business hours',
+    'contact.visitUs': 'Visit Us',
+    'contact.visitDescription': 'Our headquarters are open for scheduled meetings',
   },
 };
 

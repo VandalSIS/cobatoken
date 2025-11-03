@@ -21,7 +21,6 @@ export default function Footer() {
     company: [
       { name: t('nav.about'), href: '/about' },
       { name: t('nav.tokenomics'), href: '/tokenomics' },
-      { name: 'Команда', href: '/about#team' },
       { name: 'Карьера', href: '/careers' },
     ],
     resources: [
