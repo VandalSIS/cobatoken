@@ -147,6 +147,8 @@ const translations = {
     'about.readyToJoin': 'Готовы присоединиться к революции золотого обеспечения?',
     'about.joinDescription': 'Станьте частью будущего стабильных цифровых активов с COBA Token.',
     'about.getStarted': 'Начать сейчас',
+    'about.joinCommunity': 'Присоединиться к сообществу',
+    'about.downloadDocs': 'Скачать документацию',
     
     // About Page Values
     'about.values.security.title': 'Безопасность прежде всего',
@@ -354,6 +356,8 @@ const translations = {
     'about.readyToJoin': 'Ready to Join the Gold-Backed Revolution?',
     'about.joinDescription': 'Become part of the future of stable digital assets with COBA Token.',
     'about.getStarted': 'Get Started',
+    'about.joinCommunity': 'Join the Community',
+    'about.downloadDocs': 'Download Documentation',
     
     // About Page Values
     'about.values.security.title': 'Security First',

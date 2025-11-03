@@ -114,10 +114,10 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg">
-                  Присоединиться к сообществу
+                  {t('about.joinCommunity')}
                 </Button>
                 <Button variant="outline" size="lg">
-                  Скачать документацию
+                  {t('about.downloadDocs')}
                 </Button>
               </div>
             </motion.div>
