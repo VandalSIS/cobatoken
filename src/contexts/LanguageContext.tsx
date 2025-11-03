@@ -200,6 +200,34 @@ const translations = {
     'contact.visitUs': 'Посетите нас',
     'contact.visitDescription': 'Наша штаб-квартира открыта для запланированных встреч',
     
+    // Contact Form
+    'contact.sendMessage': 'Отправить сообщение',
+    'contact.sendMessageTitle': 'Отправьте нам сообщение',
+    'contact.formDescription': 'Заполните форму ниже, и мы свяжемся с вами как можно скорее.',
+    'contact.fullName': 'Полное имя',
+    'contact.emailAddress': 'Адрес электронной почты',
+    'contact.subject': 'Тема',
+    'contact.message': 'Сообщение',
+    'contact.interestType': 'Тип интереса',
+    'contact.sending': 'Отправка...',
+    'contact.thankYou': 'Спасибо! Ваше сообщение было успешно отправлено. Мы свяжемся с вами в ближайшее время.',
+    'contact.errorMessage': 'Что-то пошло не так. Пожалуйста, попробуйте еще раз.',
+    
+    // Form Validation
+    'contact.validation.nameMin': 'Имя должно содержать не менее 2 символов',
+    'contact.validation.emailInvalid': 'Пожалуйста, введите действительный адрес электронной почты',
+    'contact.validation.subjectMin': 'Тема должна содержать не менее 5 символов',
+    'contact.validation.messageMin': 'Сообщение должно содержать не менее 10 символов',
+    'contact.validation.interestRequired': 'Пожалуйста, выберите тип интереса',
+    
+    // Interest Types
+    'contact.interest.investment': 'Инвестиционные возможности',
+    'contact.interest.partnership': 'Партнерские запросы',
+    'contact.interest.technical': 'Техническая поддержка',
+    'contact.interest.media': 'Медиа и пресса',
+    'contact.interest.general': 'Общие вопросы',
+    'contact.interest.other': 'Другое',
+    
     // Tokenomics Page
     'tokenomics.title': 'Токеномика COBA',
     'tokenomics.subtitle': 'Прозрачная и устойчивая экономическая модель',
@@ -449,6 +477,34 @@ const translations = {
     'contact.callDescription': 'Speak directly with us during business hours',
     'contact.visitUs': 'Visit Us',
     'contact.visitDescription': 'Our headquarters are open for scheduled meetings',
+    
+    // Contact Form
+    'contact.sendMessage': 'Send Message',
+    'contact.sendMessageTitle': 'Send Us a Message',
+    'contact.formDescription': 'Fill out the form below and we\'ll get back to you as soon as possible.',
+    'contact.fullName': 'Full Name',
+    'contact.emailAddress': 'Email Address',
+    'contact.subject': 'Subject',
+    'contact.message': 'Message',
+    'contact.interestType': 'Interest Type',
+    'contact.sending': 'Sending...',
+    'contact.thankYou': 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.',
+    'contact.errorMessage': 'Something went wrong. Please try again.',
+    
+    // Form Validation
+    'contact.validation.nameMin': 'Name must be at least 2 characters',
+    'contact.validation.emailInvalid': 'Please enter a valid email address',
+    'contact.validation.subjectMin': 'Subject must be at least 5 characters',
+    'contact.validation.messageMin': 'Message must be at least 10 characters',
+    'contact.validation.interestRequired': 'Please select an interest type',
+    
+    // Interest Types
+    'contact.interest.investment': 'Investment Opportunities',
+    'contact.interest.partnership': 'Partnership Inquiries',
+    'contact.interest.technical': 'Technical Support',
+    'contact.interest.media': 'Media & Press',
+    'contact.interest.general': 'General Questions',
+    'contact.interest.other': 'Other',
     
     // Tokenomics Page
     'tokenomics.title': 'COBA Tokenomics',

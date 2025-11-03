@@ -13,22 +13,7 @@ import { CONTACT_INFO, SOCIAL_LINKS } from '@/lib/constants';
 import { ContactFormData } from '@/types';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-const contactSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email address'),
-  subject: z.string().min(5, 'Subject must be at least 5 characters'),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
-  interestType: z.string().min(1, 'Please select an interest type'),
-});
 
-const interestTypes = [
-  { value: 'investment', label: 'Инвестиционные возможности' },
-  { value: 'partnership', label: 'Партнерские запросы' },
-  { value: 'technical', label: 'Техническая поддержка' },
-  { value: 'media', label: 'Медиа и пресса' },
-  { value: 'general', label: 'Общие вопросы' },
-  { value: 'other', label: 'Другое' },
-];
 
 const socialLinks = [
   { icon: Twitter, href: SOCIAL_LINKS.twitter, label: 'Twitter' },
@@ -39,6 +24,23 @@ const socialLinks = [
 
 export default function ContactPage() {
   const { t } = useLanguage();
+
+  const contactSchema = z.object({
+    name: z.string().min(2, t('contact.validation.nameMin')),
+    email: z.string().email(t('contact.validation.emailInvalid')),
+    subject: z.string().min(5, t('contact.validation.subjectMin')),
+    message: z.string().min(10, t('contact.validation.messageMin')),
+    interestType: z.string().min(1, t('contact.validation.interestRequired')),
+  });
+
+  const interestTypes = [
+    { value: 'investment', label: t('contact.interest.investment') },
+    { value: 'partnership', label: t('contact.interest.partnership') },
+    { value: 'technical', label: t('contact.interest.technical') },
+    { value: 'media', label: t('contact.interest.media') },
+    { value: 'general', label: t('contact.interest.general') },
+    { value: 'other', label: t('contact.interest.other') },
+  ];
 
   const contactMethods = [
     {
@@ -188,10 +190,10 @@ export default function ContactPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Send Us a Message
+              {t('contact.sendMessageTitle')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Fill out the form below and we'll get back to you as soon as possible.
+              {t('contact.formDescription')}
             </p>
           </motion.div>
 
@@ -208,7 +210,7 @@ export default function ContactPage() {
                 >
                   <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400" />
                   <span className="text-green-800 dark:text-green-200">
-                    Thank you! Your message has been sent successfully. We'll get back to you soon.
+                    {t('contact.thankYou')}
                   </span>
                 </motion.div>
               )}
@@ -221,7 +223,7 @@ export default function ContactPage() {
                 >
                   <AlertCircle className="h-5 w-5 text-red-600 dark:text-red-400" />
                   <span className="text-red-800 dark:text-red-200">
-                    Sorry, there was an error sending your message. Please try again.
+                    {t('contact.errorMessage')}
                   </span>
                 </motion.div>
               )}
@@ -230,7 +232,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                      Full Name *
+                      {t('contact.fullName')} *
                     </label>
                     <input
                       type="text"
@@ -252,7 +254,7 @@ export default function ContactPage() {
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                      Email Address *
+                      {t('contact.emailAddress')} *
                     </label>
                     <input
                       type="email"
@@ -275,7 +277,7 @@ export default function ContactPage() {
 
                 <div>
                   <label htmlFor="interestType" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Interest Type *
+                    {t('contact.interestType')} *
                   </label>
                   <select
                     id="interestType"
@@ -302,7 +304,7 @@ export default function ContactPage() {
 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Subject *
+                    {t('contact.subject')} *
                   </label>
                   <input
                     type="text"
@@ -324,7 +326,7 @@ export default function ContactPage() {
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Message *
+                    {t('contact.message')} *
                   </label>
                   <textarea
                     id="message"
@@ -350,7 +352,7 @@ export default function ContactPage() {
                   isLoading={isSubmitting}
                   className="w-full"
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? t('contact.sending') : t('contact.sendMessage')}
                   {!isSubmitting && <Send className="ml-2 h-5 w-5" />}
                 </Button>
               </form>
