@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Twitter, MessageCircle, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -69,10 +70,15 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-6">
               <motion.div
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold-gradient"
                 whileHover={{ scale: 1.05 }}
               >
-                <span className="text-xl font-bold text-white">C</span>
+                <Image
+                  src="https://0zv9fxypnefwkgxn.public.blob.vercel-storage.com/coba/boooo.png"
+                  alt="COBA Logo"
+                  width={40}
+                  height={40}
+                  className="rounded-lg"
+                />
               </motion.div>
               <span className="text-xl font-bold text-white">COBA</span>
             </Link>

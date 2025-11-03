@@ -33,6 +33,7 @@ const translations = {
     'hero.currentPrice': 'Текущая цена',
     'hero.totalSupply': 'Общий выпуск',
     'hero.goldPerToken': 'Золота на токен',
+    'hero.videoNotSupported': 'Ваш браузер не поддерживает видео.',
     
     // Token Metrics
     'metrics.title': 'Метрики токена',
@@ -320,6 +321,7 @@ const translations = {
     'hero.currentPrice': 'Current Price',
     'hero.totalSupply': 'Total Supply',
     'hero.goldPerToken': 'Gold per Token',
+    'hero.videoNotSupported': 'Your browser does not support the video tag.',
     
     // Token Metrics
     'metrics.title': 'Token Metrics',

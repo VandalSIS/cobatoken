@@ -123,9 +123,8 @@ export default function Hero() {
                   controls
                   poster="https://images.unsplash.com/photo-1605792657660-596af9009e82?w=800&h=600&fit=crop&crop=center"
                 >
-                  <source src="/videos/coba-presentation.mp4" type="video/mp4" />
-                  <source src="/videos/coba-presentation.webm" type="video/webm" />
-                  Ваш браузер не поддерживает видео.
+                  <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+                  {t('hero.videoNotSupported')}
                 </video>
                 
                 {/* Play Button Overlay */}
