@@ -3,13 +3,46 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-import { FAQ_ITEMS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function FAQ() {
   const { t } = useLanguage();
   const [openItems, setOpenItems] = useState<string[]>([]);
+
+  // Create FAQ data dynamically with translations
+  const faqItems = [
+    {
+      id: '1',
+      question: t('faq.q1.question'),
+      answer: t('faq.q1.answer'),
+    },
+    {
+      id: '2',
+      question: t('faq.q2.question'),
+      answer: t('faq.q2.answer'),
+    },
+    {
+      id: '3',
+      question: t('faq.q3.question'),
+      answer: t('faq.q3.answer'),
+    },
+    {
+      id: '4',
+      question: t('faq.q4.question'),
+      answer: t('faq.q4.answer'),
+    },
+    {
+      id: '5',
+      question: t('faq.q5.question'),
+      answer: t('faq.q5.answer'),
+    },
+    {
+      id: '6',
+      question: t('faq.q6.question'),
+      answer: t('faq.q6.answer'),
+    },
+  ];
 
   const toggleItem = (id: string) => {
     setOpenItems(prev =>
@@ -37,7 +70,7 @@ export default function FAQ() {
         </motion.div>
 
         <div className="space-y-4">
-          {FAQ_ITEMS.map((item, index) => {
+          {faqItems.map((item, index) => {
             const isOpen = openItems.includes(item.id);
             
             return (

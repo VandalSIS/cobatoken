@@ -1,4 +1,4 @@
-import { TokenMetrics, RoadmapItem, FAQ, TokenDistribution, NewsItem } from '@/types';
+import { TokenMetrics, RoadmapItem, TokenDistribution, NewsItem } from '@/types';
 
 export const TOKEN_METRICS: TokenMetrics = {
   name: 'COBA',
@@ -73,38 +73,6 @@ export const ROADMAP: RoadmapItem[] = [
   },
 ];
 
-export const FAQ_ITEMS: FAQ[] = [
-  {
-    id: '1',
-    question: 'What makes COBA different from other cryptocurrencies?',
-    answer: 'COBA is backed by physical gold reserves, with each token representing 9.6 grams of gold. This provides intrinsic value and stability compared to purely speculative cryptocurrencies.',
-  },
-  {
-    id: '2',
-    question: 'How is the gold backing verified?',
-    answer: 'Our gold reserves are stored in certified vaults and audited monthly by independent third parties. All audit reports are published on our website for transparency.',
-  },
-  {
-    id: '3',
-    question: 'Can I redeem COBA tokens for physical gold?',
-    answer: 'Yes, qualified holders can redeem large quantities of COBA tokens for physical gold delivery, subject to minimum requirements and verification procedures.',
-  },
-  {
-    id: '4',
-    question: 'What is the KOH unit?',
-    answer: 'KOH is the smallest divisible unit of COBA, similar to satoshis for Bitcoin. 1 COBA equals 1,000 KOH, allowing for precise micro-transactions.',
-  },
-  {
-    id: '5',
-    question: 'How does the annual emission work?',
-    answer: 'New COBA tokens are minted annually at a rate of 9 billion tokens per year, but only when backed by corresponding gold reserves. This ensures sustainable growth while maintaining backing.',
-  },
-  {
-    id: '6',
-    question: 'Is COBA regulated?',
-    answer: 'We work closely with regulators in all jurisdictions where we operate. COBA complies with applicable securities and commodity regulations.',
-  },
-];
 
 
 export const TOKEN_DISTRIBUTION: TokenDistribution[] = [

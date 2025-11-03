@@ -6,7 +6,6 @@ import TokenMetrics from '@/components/sections/TokenMetrics';
 import HowItWorks from '@/components/sections/HowItWorks';
 import Roadmap from '@/components/sections/Roadmap';
 import FAQ from '@/components/sections/FAQ';
-import News from '@/components/sections/News';
 
 export default function HomePage() {
   return (
@@ -16,7 +15,6 @@ export default function HomePage() {
       <HowItWorks />
       <Roadmap />
       <FAQ />
-      <News />
     </Layout>
   );
 }
