@@ -126,10 +126,10 @@ export default function Roadmap() {
           viewport={{ once: true }}
           className="mt-16 text-center bg-gold-gradient rounded-2xl p-8 text-white"
         >
-          <h3 className="text-2xl font-bold mb-4">Looking Ahead</h3>
+          <h3 className="text-2xl font-bold mb-4">Взгляд в будущее</h3>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            Our roadmap continues beyond 2024 with plans for advanced DeFi integration, 
-            global regulatory compliance, and innovative gold-backed financial products.
+            Наша дорожная карта продолжается после 2024 года с планами по экологическим инициативам, 
+            международному сотрудничеству и инновационным проектам устойчивого развития.
           </p>
         </motion.div>
       </div>

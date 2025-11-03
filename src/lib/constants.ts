@@ -75,7 +75,7 @@ export const ROADMAP: RoadmapItem[] = [
       'Tier 1 centralized exchange listings',
       'Strategic partnerships with gold dealers',
       'Mobile wallet integration',
-      'Staking rewards program launch',
+      'Программы экологического развития',
     ],
   },
   {
@@ -225,8 +225,8 @@ export const NEWS_ITEMS: NewsItem[] = [
   },
   {
     id: '3',
-    title: 'COBA Introduces Staking Rewards Program',
-    excerpt: 'Token holders can now earn additional rewards through the new staking mechanism while supporting network security.',
+    title: 'COBA запускает экологические программы',
+    excerpt: 'Держатели токенов могут участвовать в программах устойчивого развития и поддержке экологических инициатив.',
     date: '2024-02-20',
     image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop',
     source: 'DeFi Weekly',
@@ -244,7 +244,7 @@ export const SOCIAL_LINKS = {
 };
 
 export const CONTACT_INFO = {
-  email: 'info@cobatoken.com',
+  email: 'info@cobagold.com',
   address: '123 Blockchain Avenue, Suite 456, Crypto City, CC 12345',
   phone: '+1 (555) 123-COBA',
 };

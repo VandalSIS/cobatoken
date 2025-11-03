@@ -25,18 +25,17 @@ const priceHistory = [
 ];
 
 const utilityData = [
-  { category: 'Trading', percentage: 40, color: '#F59E0B' },
-  { category: 'Staking', percentage: 25, color: '#D97706' },
+  { category: 'Trading', percentage: 45, color: '#F59E0B' },
+  { category: 'Eco Programs', percentage: 25, color: '#D97706' },
   { category: 'DeFi', percentage: 20, color: '#B45309' },
   { category: 'Payments', percentage: 10, color: '#92400E' },
-  { category: 'Reserves', percentage: 5, color: '#78350F' },
 ];
 
-const stakingRewards = [
-  { duration: '30 Days', apy: 5.2, multiplier: 1.0 },
-  { duration: '90 Days', apy: 7.8, multiplier: 1.2 },
-  { duration: '180 Days', apy: 12.5, multiplier: 1.5 },
-  { duration: '365 Days', apy: 18.3, multiplier: 2.0 },
+const ecoPrograms = [
+  { program: 'Образовательные инициативы', impact: 'Высокий', participants: '1000+' },
+  { program: 'Экологические проекты', impact: 'Средний', participants: '500+' },
+  { program: 'Социальная поддержка', impact: 'Высокий', participants: '2000+' },
+  { program: 'Устойчивое развитие', impact: 'Очень высокий', participants: '3000+' },
 ];
 
 const CustomTooltip = ({ active, payload, label }: any) => {
@@ -352,7 +351,7 @@ export default function TokenomicsPage() {
               <div className="space-y-6">
                 {[
                   { icon: TrendingUp, title: 'Trading & Investment', desc: 'Primary trading pair on exchanges with high liquidity' },
-                  { icon: Shield, title: 'Staking Rewards', desc: 'Earn rewards by staking tokens and securing the network' },
+                  { icon: Shield, title: 'Экологические программы', desc: 'Участие в программах устойчивого развития и экологических инициативах' },
                   { icon: Users, title: 'DeFi Integration', desc: 'Lending, borrowing, and yield farming opportunities' },
                   { icon: DollarSign, title: 'Payments', desc: 'Use for payments and transactions within our ecosystem' },
                   { icon: Award, title: 'Governance', desc: 'Vote on protocol upgrades and community proposals' },
@@ -387,7 +386,7 @@ export default function TokenomicsPage() {
         </div>
       </section>
 
-      {/* Staking Rewards */}
+      {/* Eco Programs */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -397,17 +396,17 @@ export default function TokenomicsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Staking Rewards
+              Экологические программы
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Earn attractive returns by staking your COBA tokens with flexible duration options.
+              Участвуйте в программах устойчивого развития и экологических инициативах ICC "Universum".
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {stakingRewards.map((reward, index) => (
+            {ecoPrograms.map((program, index) => (
               <motion.div
-                key={reward.duration}
+                key={program.program}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -419,19 +418,19 @@ export default function TokenomicsPage() {
                     <div className="mb-4">
                       <Calendar className="h-8 w-8 text-gold-600 dark:text-gold-400 mx-auto mb-2" />
                       <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                        {reward.duration}
+                        {program.program}
                       </h3>
                     </div>
                     <div className="mb-4">
-                      <div className="text-3xl font-bold text-gold-600 dark:text-gold-400 mb-1">
-                        {reward.apy}%
+                      <div className="text-2xl font-bold text-gold-600 dark:text-gold-400 mb-1">
+                        {program.impact}
                       </div>
                       <div className="text-sm text-gray-600 dark:text-gray-400">
-                        Annual APY
+                        Уровень воздействия
                       </div>
                     </div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">
-                      Multiplier: {reward.multiplier}x
+                      Участники: {program.participants}
                     </div>
                   </CardContent>
                 </Card>

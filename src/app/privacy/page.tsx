@@ -267,7 +267,7 @@ export default function PrivacyPage() {
                     <li><strong>Withdraw Consent:</strong> Withdraw consent for data processing</li>
                   </ul>
                   <p>
-                    To exercise these rights, please contact us at privacy@cobatoken.com. We will respond to 
+                    To exercise these rights, please contact us at privacy@cobagold.com. We will respond to 
                     your request within 30 days.
                   </p>
                 </CardContent>
@@ -335,7 +335,7 @@ export default function PrivacyPage() {
                 <CardContent className="prose dark:prose-invert">
                   <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
                   <ul>
-                    <li><strong>Email:</strong> privacy@cobatoken.com</li>
+                    <li><strong>Email:</strong> privacy@cobagold.com</li>
                     <li><strong>Address:</strong> 123 Blockchain Avenue, Suite 456, Crypto City, CC 12345</li>
                     <li><strong>Phone:</strong> +1 (555) 123-COBA</li>
                   </ul>

@@ -401,7 +401,7 @@ export default function TermsPage() {
                 <CardContent className="prose dark:prose-invert">
                   <p>If you have questions about these Terms, please contact us:</p>
                   <ul>
-                    <li><strong>Email:</strong> legal@cobatoken.com</li>
+                    <li><strong>Email:</strong> legal@cobagold.com</li>
                     <li><strong>Address:</strong> 123 Blockchain Avenue, Suite 456, Crypto City, CC 12345</li>
                     <li><strong>Phone:</strong> +1 (555) 123-COBA</li>
                   </ul>
