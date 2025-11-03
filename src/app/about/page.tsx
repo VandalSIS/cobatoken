@@ -7,81 +7,85 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-const values = [
-  {
-    icon: Shield,
-    title: 'Безопасность прежде всего',
-    description: 'Многоподписные кошельки, регулярные аудиты и протоколы безопасности институционального уровня защищают ваши инвестиции.',
-  },
-  {
-    icon: Leaf,
-    title: 'Экологическая ответственность',
-    description: 'Внедрение экологически чистых технологий и реализация масштабных экологических инициатив для будущих поколений.',
-  },
-  {
-    icon: Users,
-    title: 'Социальная значимость',
-    description: 'Поддержка местных сообществ через образовательные и культурные инициативы, развитие предпринимательства.',
-  },
-  {
-    icon: TrendingUp,
-    title: 'Устойчивое развитие',
-    description: 'Контролируемые темпы эмиссии и золотое обеспечение гарантируют долгосрочное сохранение и рост стоимости.',
-  },
-];
 
-const features = [
-  {
-    icon: Award,
-    title: 'Паевой фонд',
-    description: 'Значительный фонд, включающий товарные запасы, драгоценные металлы, земельные участки и банковские золотые резервы.',
-    stats: '100% обеспечение',
-  },
-  {
-    icon: Globe,
-    title: 'Международное сотрудничество',
-    description: 'Партнерство с Агентством Общественной Безопасности (Швейцария) и международными организациями.',
-    stats: 'Глобальный охват',
-  },
-  {
-    icon: BookOpen,
-    title: 'Образовательные программы',
-    description: 'Семинары, тренинги и вебинары с участием экспертов в области экологии и финансовых технологий.',
-    stats: 'Непрерывное обучение',
-  },
-  {
-    icon: Heart,
-    title: 'Социальная ответственность',
-    description: 'Предотвращение бедности, развитие местного предпринимательства и поддержка образовательных инициатив.',
-    stats: 'Забота о сообществах',
-  },
-];
 
-const milestones = [
-  {
-    year: '2024',
-    title: 'Основание ICC "Universum"',
-    description: 'Создание некоммерческой организации в сотрудничестве с Агентством Общественной Безопасности (Швейцария).',
-  },
-  {
-    year: '2024 Q2',
-    title: 'Формирование Паевого Фонда',
-    description: 'Создание значительного фонда с драгоценными металлами, земельными участками и банковскими золотыми резервами.',
-  },
-  {
-    year: '2024 Q3',
-    title: 'Запуск токенов COBA',
-    description: 'Введение в оборот криптовалюты COBA с золотым покрытием (1 токен = 9,6 грамм золота).',
-  },
-  {
-    year: '2024 Q4',
-    title: 'Экологические программы',
-    description: 'Запуск масштабных экологических инициатив и образовательных программ для устойчивого развития.',
-  },
-];
 
 export default function AboutPage() {
   const { t } = useLanguage();
+  
+  const values = [
+    {
+      icon: Shield,
+      title: t('about.values.security.title'),
+      description: t('about.values.security.desc'),
+    },
+    {
+      icon: Leaf,
+      title: t('about.values.ecology.title'),
+      description: t('about.values.ecology.desc'),
+    },
+    {
+      icon: Users,
+      title: t('about.values.social.title'),
+      description: t('about.values.social.desc'),
+    },
+    {
+      icon: TrendingUp,
+      title: t('about.values.sustainability.title'),
+      description: t('about.values.sustainability.desc'),
+    },
+  ];
+
+  const features = [
+    {
+      icon: Award,
+      title: t('about.features.fund.title'),
+      description: t('about.features.fund.desc'),
+      stats: t('about.features.fund.stats'),
+    },
+    {
+      icon: Globe,
+      title: t('about.features.cooperation.title'),
+      description: t('about.features.cooperation.desc'),
+      stats: t('about.features.cooperation.stats'),
+    },
+    {
+      icon: BookOpen,
+      title: t('about.features.education.title'),
+      description: t('about.features.education.desc'),
+      stats: t('about.features.education.stats'),
+    },
+    {
+      icon: Heart,
+      title: t('about.features.responsibility.title'),
+      description: t('about.features.responsibility.desc'),
+      stats: t('about.features.responsibility.stats'),
+    },
+  ];
+
+  const milestones = [
+    {
+      year: '2024',
+      title: t('about.milestones.foundation.title'),
+      description: t('about.milestones.foundation.desc'),
+    },
+    {
+      year: '2024 Q2',
+      title: t('about.milestones.fund.title'),
+      description: t('about.milestones.fund.desc'),
+    },
+    {
+      year: '2024 Q3',
+      title: t('about.milestones.launch.title'),
+      description: t('about.milestones.launch.desc'),
+    },
+    {
+      year: '2024 Q4',
+      title: t('about.milestones.programs.title'),
+      description: t('about.milestones.programs.desc'),
+    },
+  ];
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -157,24 +161,15 @@ export default function AboutPage() {
               className="prose prose-lg max-w-none dark:prose-invert"
             >
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                ICC "Universum" - некоммерческая организация, объединяющая группы взаимосвязанных компаний, объединений и творческих коллективов пайщиков, 
-                в сотрудничестве с Агентством Общественной Безопасности (Швейцария), был основан высококвалифицированным, социально ориентированным 
-                коллективом специалистов с целью реализации обширного комплекса программ и высокотехнологичных проектов, нацеленных на улучшение качества 
-                жизни и создание комфортной, экологически чистой среды обитания человека, а также на раскрытие его творческого потенциала.
+                {t('about.detailedDesc.paragraph1')}
               </p>
               
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                На базе ICC "Universum" был сформирован значительный Паевой Фонд, включающий товарные запасы пайщиков, драгоценные и редкоземельные металлы, 
-                земельные участки сельскохозяйственного и промышленного назначения, месторождения драгоценных камней, металлов, торфа, кремния, марганца и прочее, 
-                долговые обязательства: NATIONAL BOND OF DAIICHI KANGYO BANK, TOKYO, JAPAN (N157602-861) и NATIONAL BOND OF DAIICHI KANGYO BANK, TOKYO, JAPAN (N157602-887), 
-                а также Сертифицированный Документарный Тратта UCC-2 Ford Motor Company, дебиторская задолженность от глобальной финансовой системы 
-                (код транзакции №TV-BCT AN 10-01-07-0054-02.17), и достаточные объемы банковских золотых резервов для 100-процентного обеспечения всего объема 
-                введенных в оборот крипто-векселей в виде токенов.
+                {t('about.detailedDesc.paragraph2')}
               </p>
               
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                В рамках созданной финансово-логистической платформы были введены в оборот собственные токены криптовалюты COBA, обеспеченные золотым покрытием 
-                (1 токен = 9,6 грамм золота), с резервами, превышающими объем выпуска, а также паевыми и уставными фондами группы компаний кооперативов.
+                {t('about.detailedDesc.paragraph3')}
               </p>
             </motion.div>
           </div>

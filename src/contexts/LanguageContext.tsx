@@ -148,6 +148,45 @@ const translations = {
     'about.joinDescription': 'Станьте частью будущего стабильных цифровых активов с COBA Token.',
     'about.getStarted': 'Начать сейчас',
     
+    // About Page Values
+    'about.values.security.title': 'Безопасность прежде всего',
+    'about.values.security.desc': 'Многоподписные кошельки, регулярные аудиты и протоколы безопасности институционального уровня защищают ваши инвестиции.',
+    'about.values.ecology.title': 'Экологическая ответственность',
+    'about.values.ecology.desc': 'Внедрение экологически чистых технологий и реализация масштабных экологических инициатив для будущих поколений.',
+    'about.values.social.title': 'Социальная значимость',
+    'about.values.social.desc': 'Поддержка местных сообществ через образовательные и культурные инициативы, развитие предпринимательства.',
+    'about.values.sustainability.title': 'Устойчивое развитие',
+    'about.values.sustainability.desc': 'Контролируемые темпы эмиссии и золотое обеспечение гарантируют долгосрочное сохранение и рост стоимости.',
+    
+    // About Page Features
+    'about.features.fund.title': 'Паевой фонд',
+    'about.features.fund.desc': 'Значительный фонд, включающий товарные запасы, драгоценные металлы, земельные участки и банковские золотые резервы.',
+    'about.features.fund.stats': '100% обеспечение',
+    'about.features.cooperation.title': 'Международное сотрудничество',
+    'about.features.cooperation.desc': 'Партнерство с Агентством Общественной Безопасности (Швейцария) и международными организациями.',
+    'about.features.cooperation.stats': 'Глобальный охват',
+    'about.features.education.title': 'Образовательные программы',
+    'about.features.education.desc': 'Семинары, тренинги и вебинары с участием экспертов в области экологии и финансовых технологий.',
+    'about.features.education.stats': 'Непрерывное обучение',
+    'about.features.responsibility.title': 'Социальная ответственность',
+    'about.features.responsibility.desc': 'Предотвращение бедности, развитие местного предпринимательства и поддержка образовательных инициатив.',
+    'about.features.responsibility.stats': 'Забота о сообществах',
+    
+    // About Page Milestones
+    'about.milestones.foundation.title': 'Основание ICC "Universum"',
+    'about.milestones.foundation.desc': 'Создание некоммерческой организации в сотрудничестве с Агентством Общественной Безопасности (Швейцария).',
+    'about.milestones.fund.title': 'Формирование Паевого Фонда',
+    'about.milestones.fund.desc': 'Создание значительного фонда с драгоценными металлами, земельными участками и банковскими золотыми резервами.',
+    'about.milestones.launch.title': 'Запуск токенов COBA',
+    'about.milestones.launch.desc': 'Введение в оборот криптовалюты COBA с золотым покрытием (1 токен = 9,6 грамм золота).',
+    'about.milestones.programs.title': 'Экологические программы',
+    'about.milestones.programs.desc': 'Запуск масштабных экологических инициатив и образовательных программ для устойчивого развития.',
+    
+    // About Page Detailed Description
+    'about.detailedDesc.paragraph1': 'ICC "Universum" - некоммерческая организация, объединяющая группы взаимосвязанных компаний, объединений и творческих коллективов пайщиков, в сотрудничестве с Агентством Общественной Безопасности (Швейцария), был основан высококвалифицированным, социально ориентированным коллективом специалистов с целью реализации обширного комплекса программ и высокотехнологичных проектов, нацеленных на улучшение качества жизни и создание комфортной, экологически чистой среды обитания человека, а также на раскрытие его творческого потенциала.',
+    'about.detailedDesc.paragraph2': 'На базе ICC "Universum" был сформирован значительный Паевой Фонд, включающий товарные запасы пайщиков, драгоценные и редкоземельные металлы, земельные участки сельскохозяйственного и промышленного назначения, месторождения драгоценных камней, металлов, торфа, кремния, марганца и прочее, долговые обязательства: NATIONAL BOND OF DAIICHI KANGYO BANK, TOKYO, JAPAN (N157602-861) и NATIONAL BOND OF DAIICHI KANGYO BANK, TOKYO, JAPAN (N157602-887), а также Сертифицированный Документарный Тратта UCC-2 Ford Motor Company, дебиторская задолженность от глобальной финансовой системы (код транзакции №TV-BCT AN 10-01-07-0054-02.17), и достаточные объемы банковских золотых резервов для 100-процентного обеспечения всего объема введенных в оборот крипто-векселей в виде токенов.',
+    'about.detailedDesc.paragraph3': 'В рамках созданной финансово-логистической платформы были введены в оборот собственные токены криптовалюты COBA, обеспеченные золотым покрытием (1 токен = 9,6 грамм золота), с резервами, превышающими объем выпуска, а также паевыми и уставными фондами группы компаний кооперативов.',
+    
     // Contact Page
     'contact.title': 'Свяжитесь с нами',
     'contact.subtitle': 'Готовы начать свой путь с COBA?',
@@ -315,6 +354,45 @@ const translations = {
     'about.readyToJoin': 'Ready to Join the Gold-Backed Revolution?',
     'about.joinDescription': 'Become part of the future of stable digital assets with COBA Token.',
     'about.getStarted': 'Get Started',
+    
+    // About Page Values
+    'about.values.security.title': 'Security First',
+    'about.values.security.desc': 'Multi-signature wallets, regular audits, and institutional-grade security protocols protect your investments.',
+    'about.values.ecology.title': 'Environmental Responsibility',
+    'about.values.ecology.desc': 'Implementation of eco-friendly technologies and large-scale environmental initiatives for future generations.',
+    'about.values.social.title': 'Social Significance',
+    'about.values.social.desc': 'Support for local communities through educational and cultural initiatives, entrepreneurship development.',
+    'about.values.sustainability.title': 'Sustainable Development',
+    'about.values.sustainability.desc': 'Controlled emission rates and gold backing ensure long-term preservation and growth of value.',
+    
+    // About Page Features
+    'about.features.fund.title': 'Equity Fund',
+    'about.features.fund.desc': 'Significant fund including commodity stocks, precious metals, land plots, and banking gold reserves.',
+    'about.features.fund.stats': '100% Backing',
+    'about.features.cooperation.title': 'International Cooperation',
+    'about.features.cooperation.desc': 'Partnership with the Public Safety Agency (Switzerland) and international organizations.',
+    'about.features.cooperation.stats': 'Global Reach',
+    'about.features.education.title': 'Educational Programs',
+    'about.features.education.desc': 'Seminars, trainings, and webinars with experts in ecology and financial technologies.',
+    'about.features.education.stats': 'Continuous Learning',
+    'about.features.responsibility.title': 'Social Responsibility',
+    'about.features.responsibility.desc': 'Poverty prevention, local entrepreneurship development, and support for educational initiatives.',
+    'about.features.responsibility.stats': 'Community Care',
+    
+    // About Page Milestones
+    'about.milestones.foundation.title': 'ICC "Universum" Foundation',
+    'about.milestones.foundation.desc': 'Establishment of non-profit organization in collaboration with Public Safety Agency (Switzerland).',
+    'about.milestones.fund.title': 'Equity Fund Formation',
+    'about.milestones.fund.desc': 'Creation of significant fund with precious metals, land assets and banking gold reserves.',
+    'about.milestones.launch.title': 'COBA Token Launch',
+    'about.milestones.launch.desc': 'Introduction of COBA cryptocurrency with gold backing (1 token = 9.6 grams of gold).',
+    'about.milestones.programs.title': 'Environmental Programs',
+    'about.milestones.programs.desc': 'Launch of large-scale environmental initiatives and educational programs for sustainable development.',
+    
+    // About Page Detailed Description
+    'about.detailedDesc.paragraph1': 'ICC "Universum" is a non-profit organization uniting groups of interconnected companies, associations and creative collectives of shareholders, in collaboration with the Public Safety Agency (Switzerland), founded by a highly qualified, socially oriented team of specialists with the goal of implementing an extensive complex of programs and high-tech projects aimed at improving quality of life and creating a comfortable, environmentally clean human habitat, as well as unlocking creative potential.',
+    'about.detailedDesc.paragraph2': 'Based on ICC "Universum", a significant Equity Fund was formed, including commodity stocks of shareholders, precious and rare earth metals, agricultural and industrial land plots, deposits of precious stones, metals, peat, silicon, manganese and more, debt obligations: NATIONAL BOND OF DAIICHI KANGYO BANK, TOKYO, JAPAN (N157602-861) and NATIONAL BOND OF DAIICHI KANGYO BANK, TOKYO, JAPAN (N157602-887), as well as Certified Documentary Draft UCC-2 Ford Motor Company, receivables from the global financial system (transaction code №TV-BCT AN 10-01-07-0054-02.17), and sufficient volumes of banking gold reserves for 100% backing of the entire volume of crypto-bills introduced into circulation in the form of tokens.',
+    'about.detailedDesc.paragraph3': 'Within the created financial-logistic platform, proprietary COBA cryptocurrency tokens were introduced into circulation, backed by gold coverage (1 token = 9.6 grams of gold), with reserves exceeding the issuance volume, as well as equity and charter funds of the cooperative companies group.',
     
     // Contact Page
     'contact.title': 'Contact Us',
