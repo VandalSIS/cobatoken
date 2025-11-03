@@ -7,20 +7,20 @@ import { Card, CardContent } from '@/components/ui/Card';
 const steps = [
   {
     icon: ShoppingCart,
-    title: 'Purchase COBA Tokens',
-    description: 'Buy COBA tokens through our secure platform or supported exchanges using ETH, USDT, or fiat currency.',
+    title: 'ПОМЕНЯТЬ токены COBA',
+    description: 'Обменивайте токены COBA через нашу безопасную платформу используя ETH, USDT или фиатную валюту.',
     step: '01',
   },
   {
     icon: Shield,
-    title: 'Gold Reserve Verification',
-    description: 'Each token purchase is backed by physical gold reserves stored in certified vaults with monthly audits.',
+    title: 'Верификация золотых резервов',
+    description: 'Каждый токен обеспечен физическими золотыми резервами, хранящимися в сертифицированных хранилищах с ежемесячными аудитами.',
     step: '02',
   },
   {
     icon: Coins,
-    title: 'Hold or Trade',
-    description: 'Use your COBA tokens for trading, staking rewards, or redeem for physical gold (minimum amounts apply).',
+    title: 'Держите или торгуйте',
+    description: 'Используйте ваши токены COBA для торговли или обменивайте на физическое золото (применяются минимальные суммы).',
     step: '03',
   },
 ];
@@ -36,10 +36,10 @@ export default function HowItWorks() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            How COBA Works
+            Как работает COBA
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Simple, secure, and transparent. Our three-step process ensures you get the benefits of gold-backed cryptocurrency.
+            Просто, безопасно и прозрачно. Наш трехэтапный процесс обеспечивает вам все преимущества криптовалюты с золотым обеспечением.
           </p>
         </motion.div>
 

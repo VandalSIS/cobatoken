@@ -5,6 +5,7 @@ import { Shield, Target, Users, TrendingUp, Award, Globe, Lock, Zap, Leaf, BookO
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
+import Team from '@/components/sections/Team';
 
 const values = [
   {

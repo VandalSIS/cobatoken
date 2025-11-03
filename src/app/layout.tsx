@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://cobatoken.com'),
+  metadataBase: new URL('https://cobagold.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'COBA Token - Gold-Backed Cryptocurrency',
     description: 'Revolutionary gold-backed ERC-20 cryptocurrency combining stability with blockchain innovation.',
-    url: 'https://cobatoken.com',
+    url: 'https://cobagold.com',
     siteName: 'COBA Token',
     images: [
       {

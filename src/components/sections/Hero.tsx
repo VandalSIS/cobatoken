@@ -71,7 +71,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 mb-12"
             >
               <Button size="lg" className="group">
-                Купить токены COBA
+                ПОМЕНЯТЬ токены COBA
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg">
@@ -107,7 +107,7 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right Content - Hero Image */}
+          {/* Right Content - Video */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -115,13 +115,29 @@ export default function Hero() {
             className="relative"
           >
             <div className="relative z-10">
-              <motion.img
-                src="https://images.unsplash.com/photo-1605792657660-596af9009e82?w=800&h=600&fit=crop&crop=center"
-                alt="Gold bars representing COBA token backing"
-                className="rounded-2xl shadow-2xl"
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              />
+              {/* Video Player */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
+                <video
+                  className="w-full h-auto rounded-2xl"
+                  controls
+                  poster="https://images.unsplash.com/photo-1605792657660-596af9009e82?w=800&h=600&fit=crop&crop=center"
+                >
+                  <source src="/videos/coba-presentation.mp4" type="video/mp4" />
+                  <source src="/videos/coba-presentation.webm" type="video/webm" />
+                  Ваш браузер не поддерживает видео.
+                </video>
+                
+                {/* Play Button Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/10 transition-colors">
+                  <motion.div
+                    className="w-16 h-16 bg-gold-gradient rounded-full flex items-center justify-center cursor-pointer"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <div className="w-0 h-0 border-l-[20px] border-l-white border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1"></div>
+                  </motion.div>
+                </div>
+              </div>
               
               {/* Floating Elements */}
               <motion.div
