@@ -199,6 +199,8 @@ const translations = {
     'contact.callDescription': 'Говорите напрямую с нами в рабочее время',
     'contact.visitUs': 'Посетите нас',
     'contact.visitDescription': 'Наша штаб-квартира открыта для запланированных встреч',
+    'contact.multipleWays': 'Несколько способов связаться с нами',
+    'contact.communicationDescription': 'Выберите способ общения, который лучше всего подходит для вас. Мы стремимся предоставлять быстрые и полезные ответы.',
     
     // Contact Form
     'contact.sendMessage': 'Отправить сообщение',
@@ -484,6 +486,8 @@ const translations = {
     'contact.callDescription': 'Speak directly with us during business hours',
     'contact.visitUs': 'Visit Us',
     'contact.visitDescription': 'Our headquarters are open for scheduled meetings',
+    'contact.multipleWays': 'Multiple Ways to Reach Us',
+    'contact.communicationDescription': 'Choose the communication method that works best for you. We\'re committed to providing prompt, helpful responses.',
     
     // Contact Form
     'contact.sendMessage': 'Send Message',
