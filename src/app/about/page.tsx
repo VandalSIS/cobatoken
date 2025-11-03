@@ -1,59 +1,58 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Shield, Target, Users, TrendingUp, Award, Globe, Lock, Zap } from 'lucide-react';
+import { Shield, Target, Users, TrendingUp, Award, Globe, Lock, Zap, Leaf, BookOpen, Heart } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import Team from '@/components/sections/Team';
 
 const values = [
   {
     icon: Shield,
-    title: 'Security First',
-    description: 'Multi-signature wallets, regular audits, and institutional-grade security protocols protect your investments.',
+    title: 'Безопасность прежде всего',
+    description: 'Многоподписные кошельки, регулярные аудиты и протоколы безопасности институционального уровня защищают ваши инвестиции.',
   },
   {
-    icon: Target,
-    title: 'Transparency',
-    description: 'Monthly gold reserve audits, real-time metrics, and open-source smart contracts ensure complete transparency.',
+    icon: Leaf,
+    title: 'Экологическая ответственность',
+    description: 'Внедрение экологически чистых технологий и реализация масштабных экологических инициатив для будущих поколений.',
   },
   {
     icon: Users,
-    title: 'Community Driven',
-    description: 'Governance decisions are made collectively by token holders through our decentralized voting system.',
+    title: 'Социальная значимость',
+    description: 'Поддержка местных сообществ через образовательные и культурные инициативы, развитие предпринимательства.',
   },
   {
     icon: TrendingUp,
-    title: 'Sustainable Growth',
-    description: 'Controlled emission rates and gold backing ensure long-term value preservation and growth.',
+    title: 'Устойчивое развитие',
+    description: 'Контролируемые темпы эмиссии и золотое обеспечение гарантируют долгосрочное сохранение и рост стоимости.',
   },
 ];
 
 const features = [
   {
     icon: Award,
-    title: 'Proven Track Record',
-    description: 'Our team has successfully launched multiple fintech products serving millions of users.',
-    stats: '5+ Years Experience',
+    title: 'Паевой фонд',
+    description: 'Значительный фонд, включающий товарные запасы, драгоценные металлы, земельные участки и банковские золотые резервы.',
+    stats: '100% обеспечение',
   },
   {
     icon: Globe,
-    title: 'Global Reach',
-    description: 'Operating in multiple jurisdictions with full regulatory compliance and international partnerships.',
-    stats: '15+ Countries',
+    title: 'Международное сотрудничество',
+    description: 'Партнерство с Агентством Общественной Безопасности (Швейцария) и международными организациями.',
+    stats: 'Глобальный охват',
   },
   {
-    icon: Lock,
-    title: 'Secure Infrastructure',
-    description: 'Bank-grade security with cold storage, multi-sig wallets, and comprehensive insurance coverage.',
-    stats: '99.9% Uptime',
+    icon: BookOpen,
+    title: 'Образовательные программы',
+    description: 'Семинары, тренинги и вебинары с участием экспертов в области экологии и финансовых технологий.',
+    stats: 'Непрерывное обучение',
   },
   {
-    icon: Zap,
-    title: 'Fast Settlement',
-    description: 'Lightning-fast transactions on Ethereum network with low fees and instant confirmations.',
-    stats: '<1 Min Settlement',
+    icon: Heart,
+    title: 'Социальная ответственность',
+    description: 'Предотвращение бедности, развитие местного предпринимательства и поддержка образовательных инициатив.',
+    stats: 'Забота о сообществах',
   },
 ];
 
@@ -99,21 +98,21 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                About
+                О проекте
                 <span className="block bg-gold-gradient bg-clip-text text-transparent">
-                  COBA Token
+                  ICC "Universum"
                 </span>
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                We're revolutionizing digital assets by combining the timeless value of gold with cutting-edge blockchain technology. 
-                COBA Token represents the future of stable, transparent, and accessible cryptocurrency.
+                ICC "Universum" - некоммерческая организация, объединяющая группы взаимосвязанных компаний и творческих коллективов пайщиков. 
+                В сотрудничестве с Агентством Общественной Безопасности (Швейцария) мы реализуем высокотехнологичные проекты для улучшения качества жизни.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg">
-                  Join Our Community
+                  Присоединиться к сообществу
                 </Button>
                 <Button variant="outline" size="lg">
-                  Download Whitepaper
+                  Скачать документацию
                 </Button>
               </div>
             </motion.div>
@@ -135,46 +134,46 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* About ICC Universum */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+              О ICC "Universum"
+            </h2>
+          </motion.div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              className="prose prose-lg max-w-none dark:prose-invert"
             >
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-                Our Mission
-              </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                To democratize access to gold-backed digital assets while maintaining the highest standards 
-                of security, transparency, and regulatory compliance. We believe that everyone should have 
-                access to stable, asset-backed cryptocurrency that preserves value over time.
+                ICC "Universum" - некоммерческая организация, объединяющая группы взаимосвязанных компаний, объединений и творческих коллективов пайщиков, 
+                в сотрудничестве с Агентством Общественной Безопасности (Швейцария), был основан высококвалифицированным, социально ориентированным 
+                коллективом специалистов с целью реализации обширного комплекса программ и высокотехнологичных проектов, нацеленных на улучшение качества 
+                жизни и создание комфортной, экологически чистой среды обитания человека, а также на раскрытие его творческого потенциала.
               </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                By bridging traditional precious metals investing with modern blockchain technology, 
-                we're creating a new paradigm for digital asset stability and utility.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-            >
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-                Our Vision
-              </h2>
+              
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                To become the global standard for gold-backed cryptocurrency, fostering financial inclusion 
-                and stability in the digital asset ecosystem. We envision a future where stable, 
-                asset-backed tokens are the foundation of decentralized finance.
+                На базе ICC "Universum" был сформирован значительный Паевой Фонд, включающий товарные запасы пайщиков, драгоценные и редкоземельные металлы, 
+                земельные участки сельскохозяйственного и промышленного назначения, месторождения драгоценных камней, металлов, торфа, кремния, марганца и прочее, 
+                долговые обязательства: NATIONAL BOND OF DAIICHI KANGYO BANK, TOKYO, JAPAN (N157602-861) и NATIONAL BOND OF DAIICHI KANGYO BANK, TOKYO, JAPAN (N157602-887), 
+                а также Сертифицированный Документарный Тратта UCC-2 Ford Motor Company, дебиторская задолженность от глобальной финансовой системы 
+                (код транзакции №TV-BCT AN 10-01-07-0054-02.17), и достаточные объемы банковских золотых резервов для 100-процентного обеспечения всего объема 
+                введенных в оборот крипто-векселей в виде токенов.
               </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                Through continuous innovation and strategic partnerships, we aim to expand the utility 
-                and accessibility of gold-backed digital assets worldwide.
+              
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                В рамках созданной финансово-логистической платформы были введены в оборот собственные токены криптовалюты COBA, обеспеченные золотым покрытием 
+                (1 токен = 9,6 грамм золота), с резервами, превышающими объем выпуска, а также паевыми и уставными фондами группы компаний кооперативов.
               </p>
             </motion.div>
           </div>

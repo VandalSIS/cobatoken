@@ -9,18 +9,18 @@ import { formatCurrency, formatLargeNumber } from '@/lib/utils';
 const features = [
   {
     icon: Shield,
-    title: 'Gold-Backed Security',
-    description: 'Every token backed by 9.6g of physical gold',
+    title: 'Золотое обеспечение',
+    description: 'Каждый токен обеспечен 9,6 граммами физического золота',
   },
   {
     icon: TrendingUp,
-    title: 'Stable Value',
-    description: 'Combines gold stability with crypto innovation',
+    title: 'Стабильная стоимость',
+    description: 'Сочетает стабильность золота с инновациями криптовалют',
   },
   {
     icon: Zap,
-    title: 'Fast Transactions',
-    description: 'Ethereum-based for quick, secure transfers',
+    title: 'Быстрые транзакции',
+    description: 'Основан на Ethereum для быстрых и безопасных переводов',
   },
 ];
 
@@ -50,17 +50,17 @@ export default function Hero() {
               className="mb-6"
             >
               <span className="inline-block px-4 py-2 rounded-full bg-gold-500/20 text-gold-400 text-sm font-medium mb-4">
-                🏆 Gold-Backed Cryptocurrency
+                🏆 Криптовалюта с золотым обеспечением
               </span>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                The Future of
+                Будущее
                 <span className="block bg-gold-gradient bg-clip-text text-transparent">
-                  Stable Digital Assets
+                  Стабильных Цифровых Активов
                 </span>
               </h1>
               <p className="text-xl text-gray-300 mb-8 max-w-lg">
-                COBA combines the timeless value of gold with cutting-edge blockchain technology. 
-                Each token is backed by 9.6 grams of physical gold, providing unprecedented stability in the crypto market.
+                COBA - децентрализованная цифровая валюта, разработанная ICC "Universum" для повышения безопасности транзакций. 
+                Каждый токен обеспечен 9,6 граммами золота с резервами, превышающими объем выпуска.
               </p>
             </motion.div>
 
@@ -71,11 +71,11 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 mb-12"
             >
               <Button size="lg" className="group">
-                Buy COBA Tokens
+                Купить токены COBA
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg">
-                Download Whitepaper
+                Скачать документацию
               </Button>
             </motion.div>
 
@@ -90,19 +90,19 @@ export default function Hero() {
                 <div className="text-2xl font-bold text-gold-400">
                   {formatCurrency(TOKEN_METRICS.currentPrice)}
                 </div>
-                <div className="text-sm text-gray-400">Current Price</div>
+                <div className="text-sm text-gray-400">Текущая цена</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-gold-400">
                   {formatLargeNumber(TOKEN_METRICS.totalSupply)}
                 </div>
-                <div className="text-sm text-gray-400">Total Supply</div>
+                <div className="text-sm text-gray-400">Общий выпуск</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-gold-400">
-                  {TOKEN_METRICS.goldBacking}g
+                  {TOKEN_METRICS.goldBacking}г
                 </div>
-                <div className="text-sm text-gray-400">Gold per Token</div>
+                <div className="text-sm text-gray-400">Золота на токен</div>
               </div>
             </motion.div>
           </motion.div>
