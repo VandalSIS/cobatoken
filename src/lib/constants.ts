@@ -87,7 +87,7 @@ export const FAQ_ITEMS: FAQ[] = [
   {
     id: '3',
     question: 'Can I redeem COBA tokens for physical gold?',
-    answer: 'Yes, qualified investors can redeem large quantities of COBA tokens for physical gold delivery, subject to minimum requirements and verification procedures.',
+    answer: 'Yes, qualified holders can redeem large quantities of COBA tokens for physical gold delivery, subject to minimum requirements and verification procedures.',
   },
   {
     id: '4',

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: 'COBA Token - Gold-Backed Cryptocurrency',
   description: 'COBA is a revolutionary gold-backed ERC-20 cryptocurrency that combines the stability of precious metals with the innovation of blockchain technology. Each token is backed by 9.6 grams of physical gold.',
   keywords: 'COBA, cryptocurrency, gold-backed, ERC-20, blockchain, digital assets, stable token, precious metals',
-  authors: [{ name: 'COBA Team' }],
+  authors: [{ name: 'COBA' }],
   creator: 'COBA Token',
   publisher: 'COBA Token',
   formatDetection: {
