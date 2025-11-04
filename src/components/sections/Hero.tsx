@@ -129,7 +129,7 @@ export default function Hero() {
                   preload="auto"
                   onError={() => console.error('Video failed to load')}
                 >
-                    <source src="/videos/video_2025-11-03_23-32-03.mp4" type="video/mp4" />
+                    <source src="/videos/coba.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
