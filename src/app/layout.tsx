@@ -18,7 +18,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'COBA Token - Gold-Backed Cryptocurrency',
-  description: 'COBA is a revolutionary gold-backed ERC-20 cryptocurrency that combines the stability of precious metals with the innovation of blockchain technology. Each token is backed by 9.6 grams of physical gold.',
+  description: 'COBA is a revolutionary gold-backed ERC-20 cryptocurrency that combines the stability of precious metals with the innovation of blockchain technology. The price of each token is determined by the current value of 9.6 grams of gold in USDT, with daily adjustment of the gold to USDT ratio.',
   keywords: 'COBA, cryptocurrency, gold-backed, ERC-20, blockchain, digital assets, stable token, precious metals',
   authors: [{ name: 'COBA' }],
   creator: 'COBA Token',

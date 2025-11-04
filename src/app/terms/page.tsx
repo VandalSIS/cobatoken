@@ -210,7 +210,7 @@ export default function TermsPage() {
                   <h4>Token Characteristics</h4>
                   <ul>
                     <li>COBA is an ERC-20 token on the Ethereum blockchain</li>
-                    <li>Each token is backed by 9.6 grams of physical gold</li>
+                    <li>Each token is backed by 9.6 grams of gold</li>
                     <li>Tokens have 3 decimal places with KOH as the smallest unit</li>
                     <li>Total supply is capped at 33 billion tokens</li>
                     <li>Annual emission rate is 9 billion tokens per year (subject to gold backing)</li>
