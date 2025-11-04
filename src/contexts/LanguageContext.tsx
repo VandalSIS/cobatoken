@@ -27,7 +27,7 @@ const translations = {
     'hero.badge': 'Криптовалюта с золотым обеспечением',
     'hero.title': 'Будущее',
     'hero.subtitle': 'Стабильных Цифровых Активов',
-    'hero.description': 'COBA - децентрализованная цифровая валюта, разработанная ICC "Universum" для повышения безопасности транзакций. Каждый токен обеспечен 9,6 граммами золота с резервами, превышающими объем выпуска.',
+    'hero.description': 'COBA - децентрализованная цифровая валюта, разработанная ICC "Universum" для повышения, стабильности и безопасности транзакций. Цена каждого токена определяется актуальной стоимостью 9,6 грамм золота в USDT. С ежедневной корректировкой соотношения золота к USDT.',
     'hero.buyTokens': 'ПОМЕНЯТЬ токены COBA',
     'hero.downloadDocs': 'Скачать документацию',
     'hero.currentPrice': 'Текущая цена',
@@ -37,7 +37,7 @@ const translations = {
     
     // Token Metrics
     'metrics.title': 'Метрики токена',
-    'metrics.description': 'Данные в реальном времени и ключевая статистика токена COBA, демонстрирующие нашу приверженность прозрачности и росту.',
+    'metrics.description': 'Данные в реальном времени и ключевая статистика токена COBA, демонстрирует нашу приверженность прозрачности.',
     'metrics.currentPrice': 'Текущая цена',
     'metrics.marketCap': 'Рыночная капитализация',
     'metrics.totalSupply': 'Общий выпуск',
@@ -49,7 +49,7 @@ const translations = {
     'metrics.annualEmission': 'Годовая эмиссия',
     'metrics.decimals': 'Десятичные знаки',
     'metrics.smallestUnit': 'Минимальная единица',
-    'metrics.livePrice': 'Цена в реальном времени',
+    'metrics.livePrice': 'Стоимость 9.6 грамм золота в USDT в реальном времени',
     
     // How It Works
     'howItWorks.title': 'Как работает COBA',
@@ -67,7 +67,7 @@ const translations = {
     
     // Features
     'features.goldBacking': 'Золотое обеспечение',
-    'features.goldBackingDesc': 'Каждый токен обеспечен 9,6 граммами физического золота',
+    'features.goldBackingDesc': 'Каждый токен обеспечен 9,6 граммами золота',
     'features.stableValue': 'Стабильная стоимость',
     'features.stableValueDesc': 'Сочетает стабильность золота с инновациями криптовалют',
     'features.fastTransactions': 'Быстрые транзакции',
@@ -315,7 +315,7 @@ const translations = {
     'hero.badge': 'Gold-Backed Cryptocurrency',
     'hero.title': 'The Future of',
     'hero.subtitle': 'Stable Digital Assets',
-    'hero.description': 'COBA - decentralized digital currency developed by ICC "Universum" to enhance transaction security. Each token is backed by 9.6 grams of gold with reserves exceeding the issuance volume.',
+    'hero.description': 'COBA - decentralized digital currency developed by ICC "Universum" to enhance stability and transaction security. The price of each token is determined by the current value of 9.6 grams of gold in USDT. With daily adjustment of the gold to USDT ratio.',
     'hero.buyTokens': 'EXCHANGE COBA Tokens',
     'hero.downloadDocs': 'Download Documentation',
     'hero.currentPrice': 'Current Price',
@@ -325,7 +325,7 @@ const translations = {
     
     // Token Metrics
     'metrics.title': 'Token Metrics',
-    'metrics.description': 'Real-time data and key statistics for COBA token, showcasing our commitment to transparency and growth.',
+    'metrics.description': 'Real-time data and key statistics for COBA token, showcasing our commitment to transparency.',
     'metrics.currentPrice': 'Current Price',
     'metrics.marketCap': 'Market Cap',
     'metrics.totalSupply': 'Total Supply',
@@ -337,7 +337,7 @@ const translations = {
     'metrics.annualEmission': 'Annual Emission',
     'metrics.decimals': 'Decimals',
     'metrics.smallestUnit': 'Smallest Unit',
-    'metrics.livePrice': 'Live Price',
+    'metrics.livePrice': 'Value of 9.6 grams of gold in USDT in real-time',
     
     // How It Works
     'howItWorks.title': 'How COBA Works',
@@ -355,7 +355,7 @@ const translations = {
     
     // Features
     'features.goldBacking': 'Gold-Backed Security',
-    'features.goldBackingDesc': 'Every token backed by 9.6g of physical gold',
+    'features.goldBackingDesc': 'Every token backed by 9.6g of gold',
     'features.stableValue': 'Stable Value',
     'features.stableValueDesc': 'Combines gold stability with crypto innovation',
     'features.fastTransactions': 'Fast Transactions',
