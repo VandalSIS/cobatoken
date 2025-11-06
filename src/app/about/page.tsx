@@ -158,7 +158,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="prose prose-lg max-w-none dark:prose-invert"
+              className="prose prose-lg max-w-none dark:prose-invert text-left prose-headings:text-left prose-p:text-left prose-ul:text-left prose-li:text-left"
             >
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-left">
                 {t('about.detailedDesc.intro')}
@@ -177,10 +177,10 @@ export default function AboutPage() {
               </p>
 
               {/* Goals */}
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4 text-left">
                 {t('about.goals.title')}
               </h3>
-              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8 text-left">
                 <li className="flex items-start">
                   <span className="text-gold-500 mr-2">-</span>
                   <span>{t('about.goals.item1')}</span>
@@ -196,10 +196,10 @@ export default function AboutPage() {
               </ul>
 
               {/* Advantages */}
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4 text-left">
                 {t('about.advantages.title')}
               </h3>
-              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8 text-left">
                 <li className="flex items-start">
                   <span className="text-gold-500 mr-2">-</span>
                   <span>{t('about.advantages.item1')}</span>
@@ -215,10 +215,10 @@ export default function AboutPage() {
               </ul>
 
               {/* Prospects */}
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4 text-left">
                 {t('about.prospects.title')}
               </h3>
-              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8 text-left">
                 <li className="flex items-start">
                   <span className="text-gold-500 mr-2">-</span>
                   <span>{t('about.prospects.item1')}</span>
@@ -233,27 +233,27 @@ export default function AboutPage() {
                 </li>
               </ul>
 
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-left">
                 {t('about.education')}
               </p>
 
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-left">
                 {t('about.community')}
               </p>
 
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-left">
                 {t('about.platform')}
               </p>
 
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-left">
                 {t('about.ecology')}
               </p>
 
               {/* Activities */}
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4 text-left">
                 {t('about.activities.title')}
               </h3>
-              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8 text-left">
                 <li className="flex items-start">
                   <span className="text-gold-500 mr-2">-</span>
                   <span>{t('about.activities.item1')}</span>
@@ -269,7 +269,7 @@ export default function AboutPage() {
               </ul>
 
               {/* Social Programs */}
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4 text-left">
                 {t('about.social.title')}
               </h3>
               <ul className="space-y-3 text-lg text-gray-600 dark:text-gray-300 mb-8 text-left">
@@ -372,21 +372,21 @@ export default function AboutPage() {
                   transition={{ delay: index * 0.1 }}
                 >
                   <Card className="h-full">
-                    <CardContent className="p-8">
+                    <CardContent className="p-6 md:p-8">
                       <div className="flex items-start space-x-4">
-                        <div className="p-3 bg-gold-100 dark:bg-gold-900/20 rounded-xl">
+                        <div className="flex-shrink-0 p-3 bg-gold-100 dark:bg-gold-900/20 rounded-xl">
                           <Icon className="h-8 w-8 text-gold-600 dark:text-gold-400" />
                         </div>
-                        <div className="flex-1 text-left">
-                          <div className="flex items-center justify-between mb-3">
-                            <h3 className="text-xl font-bold text-gray-900 dark:text-white text-left">
+                        <div className="flex-1 text-left min-w-0">
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+                            <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white text-left">
                               {feature.title}
                             </h3>
-                            <span className="text-sm font-medium text-gold-600 dark:text-gold-400 bg-gold-100 dark:bg-gold-900/20 px-3 py-1 rounded-full">
+                            <span className="text-xs sm:text-sm font-medium text-gold-600 dark:text-gold-400 bg-gold-100 dark:bg-gold-900/20 px-3 py-1 rounded-full self-start sm:self-auto whitespace-nowrap">
                               {feature.stats}
                             </span>
                           </div>
-                          <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-left">
+                          <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-left">
                             {feature.description}
                           </p>
                         </div>
