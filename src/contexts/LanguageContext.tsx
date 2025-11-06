@@ -20,8 +20,8 @@ const translations = {
     'nav.about': 'О проекте',
     'nav.tokenomics': 'Токеномика',
     'nav.contact': 'Контакты',
-    'header.documentation': 'Документация',
-    'header.exchange': 'ПОМЕНЯТЬ COBA',
+    'header.documentation': 'ПОМЕНЯТЬ COBA на USDT',
+    'header.exchange': 'ПОМЕНЯТЬ USDT на COBA',
     
     // Hero
     'hero.badge': 'Кнопка языки',
@@ -147,7 +147,7 @@ const translations = {
     'about.joinDescription': 'Станьте частью будущего стабильных цифровых активов с COBA Token.',
     'about.getStarted': 'Начать сейчас',
     'about.joinCommunity': 'Присоединиться к сообществу',
-    'about.downloadDocs': 'Скачать документацию',
+    'about.downloadDocs': 'ПОМЕНЯТЬ COBA на USDT',
     
     // About Page Values
     'about.values.security.title': 'Безопасность прежде всего',
@@ -335,8 +335,8 @@ const translations = {
     'nav.about': 'About',
     'nav.tokenomics': 'Tokenomics',
     'nav.contact': 'Contact',
-    'header.documentation': 'Documentation',
-    'header.exchange': 'EXCHANGE COBA',
+    'header.documentation': 'EXCHANGE COBA to USDT',
+    'header.exchange': 'EXCHANGE USDT to COBA',
     
     // Hero
     'hero.badge': 'Language Button',
@@ -462,7 +462,7 @@ const translations = {
     'about.joinDescription': 'Become part of the future of stable digital assets with COBA Token.',
     'about.getStarted': 'Get Started',
     'about.joinCommunity': 'Join the Community',
-    'about.downloadDocs': 'Download Documentation',
+    'about.downloadDocs': 'EXCHANGE COBA to USDT',
     
     // About Page Values
     'about.values.security.title': 'Security First',
