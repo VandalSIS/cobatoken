@@ -64,113 +64,29 @@ export default function PrivacyContentEN() {
       <section className="py-16 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
-            {/* Introduction */}
+            {/* Privacy Policy */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Introduction</CardTitle>
+                <CardTitle>Privacy Policy</CardTitle>
               </CardHeader>
               <CardContent className="prose dark:prose-invert max-w-none">
                 <p>
-                  COBA Token ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains 
-                  how we collect, use, disclose, and safeguard your information when you visit our website, use our services, 
+                  We do not collect, and do not use, we protect your information when you visit our website, use our services, 
                   or interact with our platform.
                 </p>
                 <p>
-                  By accessing or using our services, you agree to the collection and use of information in accordance with 
-                  this policy. If you do not agree with our policies and practices, do not use our services.
+                  We implement appropriate security measures to protect your personal information.
                 </p>
-              </CardContent>
-            </Card>
-
-            {/* Information We Collect */}
-            <Card>
-              <CardHeader>
-                <CardTitle>2. Information We Collect</CardTitle>
-              </CardHeader>
-              <CardContent className="prose dark:prose-invert max-w-none">
-                <h4>Personal Information</h4>
-                <ul>
-                  <li>Name, email address, and contact information</li>
-                  <li>Account credentials and authentication data</li>
-                  <li>Identity verification documents (KYC/AML compliance)</li>
-                  <li>Payment and transaction information</li>
-                  <li>Communication preferences and history</li>
-                </ul>
-
-                <h4>Technical Information</h4>
-                <ul>
-                  <li>IP address, browser type, and device information</li>
-                  <li>Usage data and website analytics</li>
-                  <li>Cookies and similar tracking technologies</li>
-                  <li>Log files and error reports</li>
-                </ul>
-
-                <h4>Blockchain Information</h4>
-                <ul>
-                  <li>Wallet addresses and transaction history</li>
-                  <li>Token holdings and trading activity</li>
-                  <li>Smart contract interactions</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* How We Use Your Information */}
-            <Card>
-              <CardHeader>
-                <CardTitle>3. How We Use Your Information</CardTitle>
-              </CardHeader>
-              <CardContent className="prose dark:prose-invert max-w-none">
-                <p>We use the collected information for the following purposes:</p>
-                <ul>
-                  <li><strong>Service Provision:</strong> To provide, maintain, and improve our services</li>
-                  <li><strong>Account Management:</strong> To create and manage your account</li>
-                  <li><strong>Transaction Processing:</strong> To process transactions and token transfers</li>
-                  <li><strong>Compliance:</strong> To comply with legal and regulatory requirements</li>
-                  <li><strong>Communication:</strong> To send important updates and respond to inquiries</li>
-                  <li><strong>Security:</strong> To detect and prevent fraud and security threats</li>
-                  <li><strong>Analytics:</strong> To analyze usage patterns and improve user experience</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Information Sharing */}
-            <Card>
-              <CardHeader>
-                <CardTitle>4. Information Sharing and Disclosure</CardTitle>
-              </CardHeader>
-              <CardContent className="prose dark:prose-invert max-w-none">
-                <p>We may share your information in the following circumstances:</p>
-                <ul>
-                  <li><strong>Service Providers:</strong> With trusted third-party service providers who assist in our operations</li>
-                  <li><strong>Legal Requirements:</strong> When required by law, regulation, or court order</li>
-                  <li><strong>Business Transfers:</strong> In connection with mergers, acquisitions, or asset sales</li>
-                  <li><strong>Consent:</strong> When you have given explicit consent to share specific information</li>
-                  <li><strong>Security:</strong> To protect our rights, property, or safety, and that of our users</li>
-                </ul>
-                <p>
-                  We do not sell, rent, or trade your personal information to third parties for their marketing purposes.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Data Security */}
-            <Card>
-              <CardHeader>
-                <CardTitle>5. Data Security</CardTitle>
-              </CardHeader>
-              <CardContent className="prose dark:prose-invert max-w-none">
-                <p>We implement appropriate security measures to protect your personal information:</p>
                 <ul>
                   <li>Encryption of data in transit and at rest</li>
-                  <li>Multi-factor authentication for account access</li>
+                  <li>Multi-factor authentication for access</li>
                   <li>Regular security audits and penetration testing</li>
-                  <li>Access controls and employee training</li>
                   <li>Incident response and breach notification procedures</li>
                 </ul>
                 <p>
                   However, no method of transmission over the internet or electronic storage is 100% secure. While we 
-                  strive to use commercially acceptable means to protect your information, we cannot guarantee its 
-                  absolute security.
+                  strive to use commercially acceptable means to protect information, we can guarantee its absolute security 
+                  on our part.
                 </p>
               </CardContent>
             </Card>
@@ -178,7 +94,7 @@ export default function PrivacyContentEN() {
             {/* Your Rights */}
             <Card>
               <CardHeader>
-                <CardTitle>6. Your Rights and Choices</CardTitle>
+                <CardTitle>Your Rights and Choices</CardTitle>
               </CardHeader>
               <CardContent className="prose dark:prose-invert max-w-none">
                 <p>You have the following rights regarding your personal information:</p>
@@ -201,7 +117,7 @@ export default function PrivacyContentEN() {
             {/* Cookies */}
             <Card>
               <CardHeader>
-                <CardTitle>7. Cookies and Tracking Technologies</CardTitle>
+                <CardTitle>Cookies and Tracking Technologies</CardTitle>
               </CardHeader>
               <CardContent className="prose dark:prose-invert max-w-none">
                 <p>
@@ -221,7 +137,7 @@ export default function PrivacyContentEN() {
             {/* International Transfers */}
             <Card>
               <CardHeader>
-                <CardTitle>8. International Data Transfers</CardTitle>
+                <CardTitle>International Data Transfers</CardTitle>
               </CardHeader>
               <CardContent className="prose dark:prose-invert max-w-none">
                 <p>
@@ -240,7 +156,7 @@ export default function PrivacyContentEN() {
             {/* Changes to Policy */}
             <Card>
               <CardHeader>
-                <CardTitle>9. Changes to This Privacy Policy</CardTitle>
+                <CardTitle>Changes to This Privacy Policy</CardTitle>
               </CardHeader>
               <CardContent className="prose dark:prose-invert max-w-none">
                 <p>
