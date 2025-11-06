@@ -16,14 +16,14 @@ const emissionData = [
   { year: '2027', tokens: 6000000000, cumulative: 33000000000 },
 ];
 
-const CustomTooltip = ({ active, payload, label }: any) => {
+const CustomTooltip = ({ active, payload, label, language }: any) => {
   if (active && payload && payload.length) {
     return (
       <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
-        <p className="text-gray-900 dark:text-white font-semibold">{label}</p>
+        <p className="text-gray-900 dark:text-white font-semibold text-base mb-2">{label}</p>
         {payload.map((entry: any, index: number) => (
-          <p key={index} style={{ color: entry.color }} className="font-medium">
-            {entry.name}: {entry.value}
+          <p key={index} style={{ color: entry.color }} className="font-medium text-sm">
+            {entry.name}: {formatLargeNumber(entry.value, language || 'en')}
           </p>
         ))}
       </div>
@@ -33,7 +33,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 };
 
 export default function TokenomicsPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const ecoPrograms = [
     { program: t('tokenomics.ecoPrograms.educational'), impact: t('tokenomics.ecoPrograms.high'), participants: '1000+' },
@@ -127,7 +127,7 @@ export default function TokenomicsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Coins, label: 'Общий выпуск', value: formatLargeNumber(TOKEN_METRICS.totalSupply), color: 'text-blue-600' },
+              { icon: Coins, label: 'Общий выпуск', value: formatLargeNumber(TOKEN_METRICS.totalSupply, language), color: 'text-blue-600' },
               { icon: DollarSign, label: 'Текущая цена', value: formatCurrency(TOKEN_METRICS.currentPrice), color: 'text-green-600' },
               { icon: Shield, label: 'Золотое обеспечение', value: `${TOKEN_METRICS.goldBacking}г`, color: 'text-gold-600' },
               { icon: TrendingUp, label: 'Рыночная капитализация', value: formatCurrency(TOKEN_METRICS.marketCap), color: 'text-purple-600' },
@@ -240,7 +240,7 @@ export default function TokenomicsPage() {
                         {item.percentage}%
                       </div>
                       <div className="text-sm text-gray-600 dark:text-gray-400">
-                        {formatLargeNumber(item.amount)} COBA
+                        {formatLargeNumber(item.amount, language)} COBA
                       </div>
                     </div>
                   </motion.div>
@@ -276,9 +276,18 @@ export default function TokenomicsPage() {
               <ResponsiveContainer width="100%" height={400}>
                 <BarChart data={emissionData}>
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="year" />
-                  <YAxis tickFormatter={(value) => formatLargeNumber(value)} />
-                  <Tooltip content={<CustomTooltip />} />
+                  <XAxis 
+                    dataKey="year" 
+                    tick={{ fill: '#6B7280', fontSize: 14, fontWeight: 500 }}
+                  />
+                  <YAxis 
+                    tickFormatter={(value) => formatLargeNumber(value, language)}
+                    tick={{ fill: '#6B7280', fontSize: 14, fontWeight: 500 }}
+                    width={80}
+                  />
+                  <Tooltip 
+                    content={<CustomTooltip language={language} />}
+                  />
                   <Bar dataKey="tokens" fill="#F59E0B" name={t('tokenomics.annualEmissionLabel')} />
                 </BarChart>
               </ResponsiveContainer>
@@ -287,8 +296,8 @@ export default function TokenomicsPage() {
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { label: t('tokenomics.annualEmissionLabel'), value: formatLargeNumber(TOKEN_METRICS.annualEmission), desc: t('tokenomics.tokensPerYear') },
-              { label: t('tokenomics.maxSupplyLabel'), value: formatLargeNumber(TOKEN_METRICS.maxSupply), desc: t('tokenomics.totalCap') },
+              { label: t('tokenomics.annualEmissionLabel'), value: formatLargeNumber(TOKEN_METRICS.annualEmission, language), desc: t('tokenomics.tokensPerYear') },
+              { label: t('tokenomics.maxSupplyLabel'), value: formatLargeNumber(TOKEN_METRICS.maxSupply, language), desc: t('tokenomics.totalCap') },
               { label: t('tokenomics.emissionPeriod'), value: t('tokenomics.fourYears'), desc: t('tokenomics.untilMaxSupply') },
             ].map((stat, index) => (
               <motion.div

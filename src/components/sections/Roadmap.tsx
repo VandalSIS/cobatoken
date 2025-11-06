@@ -69,7 +69,7 @@ export default function Roadmap() {
       year: 2024,
       title: t('roadmap.q3.title'),
       description: t('roadmap.q3.description'),
-      status: 'upcoming' as 'completed' | 'in-progress' | 'upcoming',
+      status: 'completed' as 'completed' | 'in-progress' | 'upcoming',
       items: [
         t('roadmap.q3.item1'),
         t('roadmap.q3.item2'),

@@ -136,7 +136,7 @@ export default function Hero() {
               </div>
               <div>
                 <div className="text-2xl font-bold text-gold-400">
-                  {formatLargeNumber(TOKEN_METRICS.totalSupply)}
+                  {formatLargeNumber(TOKEN_METRICS.totalSupply, language)}
                 </div>
                 <div className="text-sm text-gray-400">{t('hero.totalSupply')}</div>
               </div>

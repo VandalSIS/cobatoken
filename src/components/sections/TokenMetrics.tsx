@@ -8,7 +8,7 @@ import { formatCurrency, formatLargeNumber, formatNumber } from '@/lib/utils';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function TokenMetrics() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const metrics = [
     {
@@ -28,7 +28,7 @@ export default function TokenMetrics() {
     {
       icon: Coins,
       label: t('metrics.totalSupply'),
-      value: formatLargeNumber(TOKEN_METRICS.totalSupply),
+      value: formatLargeNumber(TOKEN_METRICS.totalSupply, language),
       change: t('metrics.fixed'),
       positive: null,
     },
@@ -42,8 +42,8 @@ export default function TokenMetrics() {
   ];
 
   const additionalStats = [
-    { label: t('metrics.maxSupply'), value: formatLargeNumber(TOKEN_METRICS.maxSupply) },
-    { label: t('metrics.annualEmission'), value: formatLargeNumber(TOKEN_METRICS.annualEmission) },
+    { label: t('metrics.maxSupply'), value: formatLargeNumber(TOKEN_METRICS.maxSupply, language) },
+    { label: t('metrics.annualEmission'), value: formatLargeNumber(TOKEN_METRICS.annualEmission, language) },
     { label: t('metrics.decimals'), value: TOKEN_METRICS.decimals.toString() },
     { label: t('metrics.smallestUnit'), value: TOKEN_METRICS.smallestUnit },
   ];

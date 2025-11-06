@@ -79,7 +79,7 @@ const translations = {
     
     // FAQ
     'faq.title': 'Часто задаваемые вопросы',
-    'faq.description': 'Получите ответы на распространенные вопросы о токенах COBA, золотом обеспечении и нашей платформе.',
+    'faq.description': 'Получите ответы на часто задаваемые вопросы о нашей платформе и COBA, стабильность которого обеспечивает золото.',
     'faq.stillQuestions': 'Остались вопросы?',
     'faq.teamHelp': 'Мы готовы помочь вам понять токены COBA и начать работу с криптовалютой с золотым обеспечением.',
     'faq.contactSupport': 'Связаться с поддержкой',
@@ -105,7 +105,7 @@ const translations = {
     'roadmap.futureDescription': 'Наша дорожная карта продолжается после 2025 года с планами по экологическим инициативам, международному сотрудничеству и инновационным проектам устойчивого развития.',
     'roadmap.status.completed': 'Завершено',
     'roadmap.status.in-progress': 'В процессе',
-    'roadmap.status.upcoming': 'Предстоящее',
+    'roadmap.status.upcoming': 'Реализуется',
     
     // Roadmap Items
     'roadmap.q1.title': 'Основание ICC "Universum"',
@@ -134,7 +134,7 @@ const translations = {
     'roadmap.q4.item4': 'Расширенные торговые функции',
     
     // About Page
-    'about.title': 'О ICC "Universum"',
+    'about.title': 'ICC "Universum"',
     'about.subtitle': 'Революция в мире криптовалют с золотым обеспечением',
     'about.description': 'ICC "Universum" — некоммерческая организация, созданная в сотрудничестве с Агентством Общественной Безопасности (Швейцария). Наша миссия — создание устойчивой экосистемы криптовалют с золотым обеспечением, которая сочетает финансовые инновации с экологической и социальной ответственностью.',
     'about.coreValues': 'Наши основные ценности',
@@ -157,7 +157,7 @@ const translations = {
     'about.values.social.title': 'Социальная значимость',
     'about.values.social.desc': 'Поддержка местных сообществ через образовательные и культурные инициативы, развитие предпринимательства.',
     'about.values.sustainability.title': 'Устойчивое развитие',
-    'about.values.sustainability.desc': 'Контролируемые темпы эмиссии и золотое обеспечение гарантируют долгосрочное сохранение и рост стоимости.',
+    'about.values.sustainability.desc': 'Контролируемые темпы эмиссии в соответствии с стоимостью золота обеспечивают и гарантируют долгосрочное сохранение СОВА.',
     
     // About Page Features
     'about.features.fund.title': 'Паевой фонд',
@@ -184,7 +184,7 @@ const translations = {
     'about.milestones.programs.desc': 'Запуск масштабных экологических инициатив и образовательных программ для устойчивого развития.',
     
     // About Page Detailed Description
-    'about.detailedDesc.intro': 'ICC "Universum" - некоммерческая организация, объединяющая группы взаимосвязанных компаний, объединений и творческих коллективов пайщиков (ICC «Universum), в сотрудничестве с Агентством Общественной Безопасности (Швейцария), был основан высококвалифицированным, социально ориентированным коллективом специалистов с целью реализации обширного комплекса программ и высокотехнологичных проектов, нацеленных на улучшение качества жизни и создание комфортной, экологически чистой среды обитания человека, а также на раскрытие его творческого потенциала.',
+    'about.detailedDesc.intro': 'ICC "Universum" - некоммерческая организация, объединяющая группы взаимосвязанных компаний, объединений и творческих коллективов пайщиков ICC «Universum, в сотрудничестве с Агентством Общественной Безопасности (Швейцария), был основан высококвалифицированным, социально ориентированным коллективом специалистов с целью реализации обширного комплекса программ и высокотехнологичных проектов, нацеленных на улучшение качества жизни и создание комфортной, экологически чистой среды обитания человека, а также на раскрытие его творческого потенциала.',
     'about.detailedDesc.fund': 'На базе ICC "Universum" был сформирован значительный Паевой Фонд, включающий товарные запасы пайщиков, драгоценные и редкоземельные металлы, земельные участки сельскохозяйственного и промышленного назначения, месторождения драгоценных камней, металлов, торфа, кремния, марганца и прочее, долговые обязательства: NATIONAL BOND OF DAIICHI KANGYO BANK, TOKYO, JAPAN (N157602-861) и NATIONAL BOND OF DAIICHI KANGYO BANK, TOKYO, JAPAN (N157602-887), а также Сертифицированный Документарный Тратта UCC-2 Ford Motor Company, дебиторская задолженность от глобальной финансовой системы (код транзакции №TV-BCT AN 10-01-07-0054-02.17), и достаточные объемы банковских золотых резервов для 100-процентного обеспечения всего объема введенных в оборот крипто-векселей в виде токенов.',
     'about.detailedDesc.coba': 'В рамках созданной финансово-логистической платформы были введены в оборот собственные токены криптовалюты COBA, обеспеченные золотым покрытием (1 токен = 9,6 грамм золота), с резервами, превышающими объем выпуска, а также паевыми и уставными фондами группы компаний кооперативов.',
     'about.detailedDesc.purpose': 'COBA предназначена для всестороннего финансирования социально значимых проектов, внедрения передовых технологий, альтернативной энергетики и реализации масштабных экологических инициатив, направленных на очистку и экологическую коррекцию водных, земельных и лесных ресурсов и т.д. Обеспечение максимальной безопасности и комфорта для инвесторов является одной из ключевых задач. Криптовалюта COBA представляет собой децентрализованную цифровую валюту, разработанную с целью повышения безопасности и удобства транзакций в блокчейне. Она использует современные алгоритмы шифрования для защиты пользовательских данных и предотвращения мошеннических действий.',
@@ -394,7 +394,7 @@ const translations = {
     
     // FAQ
     'faq.title': 'Frequently Asked Questions',
-    'faq.description': 'Get answers to common questions about COBA tokens, gold backing, and our platform.',
+    'faq.description': 'Get answers to frequently asked questions about our platform and COBA, whose stability is ensured by gold.',
     'faq.stillQuestions': 'Still have questions?',
     'faq.teamHelp': 'We are here to help you understand COBA tokens and get started with gold-backed cryptocurrency.',
     'faq.contactSupport': 'Contact Support',
@@ -472,7 +472,7 @@ const translations = {
     'about.values.social.title': 'Social Significance',
     'about.values.social.desc': 'Support for local communities through educational and cultural initiatives, entrepreneurship development.',
     'about.values.sustainability.title': 'Sustainable Development',
-    'about.values.sustainability.desc': 'Controlled emission rates and gold backing ensure long-term preservation and growth of value.',
+    'about.values.sustainability.desc': 'Controlled emission rates in accordance with the value of gold ensure and guarantee the long-term preservation of COBA.',
     
     // About Page Features
     'about.features.fund.title': 'Equity Fund',

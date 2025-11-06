@@ -160,19 +160,19 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="prose prose-lg max-w-none dark:prose-invert"
             >
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-left">
                 {t('about.detailedDesc.intro')}
               </p>
               
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-left">
                 {t('about.detailedDesc.fund')}
               </p>
               
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-left">
                 {t('about.detailedDesc.coba')}
               </p>
               
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-left">
                 {t('about.detailedDesc.purpose')}
               </p>
 
@@ -272,7 +272,7 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">
                 {t('about.social.title')}
               </h3>
-              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+              <ul className="space-y-3 text-lg text-gray-600 dark:text-gray-300 mb-8 text-left">
                 <li className="flex items-start">
                   <span className="text-gold-500 mr-2">-</span>
                   <span>{t('about.social.item1')}</span>
@@ -287,7 +287,7 @@ export default function AboutPage() {
                 </li>
               </ul>
 
-              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-left">
                 {t('about.conclusion')}
               </p>
             </motion.div>
@@ -377,16 +377,16 @@ export default function AboutPage() {
                         <div className="p-3 bg-gold-100 dark:bg-gold-900/20 rounded-xl">
                           <Icon className="h-8 w-8 text-gold-600 dark:text-gold-400" />
                         </div>
-                        <div className="flex-1">
+                        <div className="flex-1 text-left">
                           <div className="flex items-center justify-between mb-3">
-                            <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                            <h3 className="text-xl font-bold text-gray-900 dark:text-white text-left">
                               {feature.title}
                             </h3>
                             <span className="text-sm font-medium text-gold-600 dark:text-gold-400 bg-gold-100 dark:bg-gold-900/20 px-3 py-1 rounded-full">
                               {feature.stats}
                             </span>
                           </div>
-                          <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                          <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-left">
                             {feature.description}
                           </p>
                         </div>

@@ -102,7 +102,7 @@ export default function HowItWorks() {
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               {t('howItWorks.whyChoose')}
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 max-w-2xl mx-auto">
               <div className="text-center">
                 <div className="text-3xl font-bold text-gold-600 dark:text-gold-400 mb-2">
                   5,000+
@@ -117,14 +117,6 @@ export default function HowItWorks() {
                 </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">
                   {t('howItWorks.trading247')}
-                </div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gold-600 dark:text-gold-400 mb-2">
-                  100%
-                </div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">
-                  {t('howItWorks.goldBacked')}
                 </div>
               </div>
             </div>

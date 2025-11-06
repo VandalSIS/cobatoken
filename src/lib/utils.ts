@@ -20,15 +20,18 @@ export function formatCurrency(num: number): string {
   }).format(num);
 }
 
-export function formatLargeNumber(num: number): string {
+export function formatLargeNumber(num: number, language: 'ru' | 'en' = 'en'): string {
   if (num >= 1e9) {
-    return (num / 1e9).toFixed(1) + 'B';
+    const suffix = language === 'ru' ? 'млрд' : 'B';
+    return (num / 1e9).toFixed(1) + suffix;
   }
   if (num >= 1e6) {
-    return (num / 1e6).toFixed(1) + 'M';
+    const suffix = language === 'ru' ? 'млн' : 'M';
+    return (num / 1e6).toFixed(1) + suffix;
   }
   if (num >= 1e3) {
-    return (num / 1e3).toFixed(1) + 'K';
+    const suffix = language === 'ru' ? 'тыс' : 'K';
+    return (num / 1e3).toFixed(1) + suffix;
   }
   return num.toString();
 }
