@@ -23,11 +23,6 @@ export default function FAQ() {
       answer: t('faq.q2.answer'),
     },
     {
-      id: '3',
-      question: t('faq.q3.question'),
-      answer: t('faq.q3.answer'),
-    },
-    {
       id: '4',
       question: t('faq.q4.question'),
       answer: t('faq.q4.answer'),

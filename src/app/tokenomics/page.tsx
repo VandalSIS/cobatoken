@@ -5,7 +5,7 @@ import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Toolti
 import { Coins, TrendingUp, Shield, Users, DollarSign, Calendar, Award, Target } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { TOKEN_METRICS, TOKEN_DISTRIBUTION } from '@/lib/constants';
+import { TOKEN_METRICS } from '@/lib/constants';
 import { formatCurrency, formatLargeNumber, formatNumber } from '@/lib/utils';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -15,16 +15,6 @@ const emissionData = [
   { year: '2026', tokens: 9000000000, cumulative: 27000000000 },
   { year: '2027', tokens: 6000000000, cumulative: 33000000000 },
 ];
-
-const priceHistory = [
-  { month: 'Jan', price: 0.0018 },
-  { month: 'Feb', price: 0.0021 },
-  { month: 'Mar', price: 0.0019 },
-  { month: 'Apr', price: 0.0023 },
-  { month: 'May', price: 0.0024 },
-  { month: 'Jun', price: 0.0024 },
-];
-
 
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
@@ -57,6 +47,39 @@ export default function TokenomicsPage() {
     { category: t('tokenomics.ecoPrograms'), percentage: 25, color: '#D97706' },
     { category: t('tokenomics.defi'), percentage: 20, color: '#B45309' },
     { category: t('tokenomics.payments'), percentage: 10, color: '#92400E' },
+  ];
+
+  const tokenDistribution = [
+    {
+      category: t('tokenomics.publicSale'),
+      percentage: 45,
+      amount: 14850000000,
+      color: '#F59E0B',
+    },
+    {
+      category: t('tokenomics.reserveFund'),
+      percentage: 25,
+      amount: 8250000000,
+      color: '#D97706',
+    },
+    {
+      category: t('tokenomics.developmentFund'),
+      percentage: 15,
+      amount: 4950000000,
+      color: '#B45309',
+    },
+    {
+      category: t('tokenomics.development'),
+      percentage: 10,
+      amount: 3300000000,
+      color: '#92400E',
+    },
+    {
+      category: t('tokenomics.marketing'),
+      percentage: 5,
+      amount: 1650000000,
+      color: '#78350F',
+    },
   ];
   return (
     <Layout>
@@ -169,7 +192,7 @@ export default function TokenomicsPage() {
                   <ResponsiveContainer width="100%" height={400}>
                     <PieChart>
                       <Pie
-                        data={TOKEN_DISTRIBUTION}
+                        data={tokenDistribution}
                         cx="50%"
                         cy="50%"
                         innerRadius={80}
@@ -177,7 +200,7 @@ export default function TokenomicsPage() {
                         paddingAngle={2}
                         dataKey="percentage"
                       >
-                        {TOKEN_DISTRIBUTION.map((entry, index) => (
+                        {tokenDistribution.map((entry, index) => (
                           <Cell key={`cell-${index}`} fill={entry.color} />
                         ))}
                       </Pie>
@@ -194,7 +217,7 @@ export default function TokenomicsPage() {
               viewport={{ once: true }}
             >
               <div className="space-y-4">
-                {TOKEN_DISTRIBUTION.map((item, index) => (
+                {tokenDistribution.map((item, index) => (
                   <motion.div
                     key={item.category}
                     initial={{ opacity: 0, y: 20 }}
@@ -349,7 +372,6 @@ export default function TokenomicsPage() {
             >
               <div className="space-y-6">
                 {[
-                  { icon: TrendingUp, title: t('tokenomics.tradingInvestments'), desc: t('tokenomics.tradingInvestmentsDesc') },
                   { icon: Shield, title: t('tokenomics.ecoProgramsTitle'), desc: t('tokenomics.ecoProgramsDesc') },
                   { icon: Users, title: t('tokenomics.defiIntegration'), desc: t('tokenomics.defiIntegrationDesc') },
                   { icon: DollarSign, title: t('tokenomics.paymentsTitle'), desc: t('tokenomics.paymentsDesc') },
@@ -436,49 +458,6 @@ export default function TokenomicsPage() {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Price History */}
-      <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              {t('tokenomics.pricePerformance')}
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              {t('tokenomics.pricePerformanceDesc')}
-            </p>
-          </motion.div>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-center">{t('tokenomics.priceHistory')}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ResponsiveContainer width="100%" height={400}>
-                <AreaChart data={priceHistory}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="month" />
-                  <YAxis tickFormatter={(value) => formatCurrency(value)} />
-                  <Tooltip content={<CustomTooltip />} />
-                  <Area 
-                    type="monotone" 
-                    dataKey="price" 
-                    stroke="#F59E0B" 
-                    fill="#F59E0B" 
-                    fillOpacity={0.3}
-                    name="Price (USD)"
-                  />
-                </AreaChart>
-              </ResponsiveContainer>
-            </CardContent>
-          </Card>
         </div>
       </section>
     </Layout>

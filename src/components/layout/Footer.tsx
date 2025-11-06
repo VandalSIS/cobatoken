@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Twitter, MessageCircle, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Twitter, MessageCircle, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { SOCIAL_LINKS, CONTACT_INFO } from '@/lib/constants';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -22,19 +22,13 @@ export default function Footer() {
     company: [
       { name: t('nav.about'), href: '/about' },
       { name: t('nav.tokenomics'), href: '/tokenomics' },
-      { name: t('footer.careers'), href: '/careers' },
     ],
     resources: [
-      { name: t('footer.documentation'), href: '/whitepaper.pdf' },
-      { name: t('footer.guides'), href: '/docs' },
       { name: t('footer.faq'), href: '/#faq' },
-      { name: t('footer.blog'), href: '/blog' },
     ],
     legal: [
       { name: t('footer.privacy'), href: '/privacy' },
       { name: t('footer.terms'), href: '/terms' },
-      { name: t('footer.cookies'), href: '/cookies' },
-      { name: t('footer.disclaimer'), href: '/disclaimer' },
     ],
   };
   return (
@@ -87,16 +81,8 @@ export default function Footer() {
             </p>
             <div className="space-y-2 text-sm text-gray-400">
               <div className="flex items-center space-x-2">
-                <MapPin size={16} />
-                <span>{CONTACT_INFO.address}</span>
-              </div>
-              <div className="flex items-center space-x-2">
                 <Mail size={16} />
                 <span>{CONTACT_INFO.email}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Phone size={16} />
-                <span>{CONTACT_INFO.phone}</span>
               </div>
             </div>
           </div>

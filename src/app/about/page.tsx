@@ -65,12 +65,12 @@ export default function AboutPage() {
 
   const milestones = [
     {
-      year: '2024',
+      year: '2021 Q1',
       title: t('about.milestones.foundation.title'),
       description: t('about.milestones.foundation.desc'),
     },
     {
-      year: '2024 Q2',
+      year: '2022 Q2',
       title: t('about.milestones.fund.title'),
       description: t('about.milestones.fund.desc'),
     },
@@ -80,7 +80,7 @@ export default function AboutPage() {
       description: t('about.milestones.launch.desc'),
     },
     {
-      year: '2024 Q4',
+      year: '2025 Q4',
       title: t('about.milestones.programs.title'),
       description: t('about.milestones.programs.desc'),
     },
@@ -139,7 +139,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* About ICC Universum */}
+      {/* About ICC Universum - Detailed */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -149,27 +149,146 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-              О ICC "Universum"
+              О ПРОЕКТЕ
             </h2>
           </motion.div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
+          <div className="max-w-4xl mx-auto space-y-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="prose prose-lg max-w-none dark:prose-invert"
             >
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                {t('about.detailedDesc.paragraph1')}
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+                {t('about.detailedDesc.intro')}
               </p>
               
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                {t('about.detailedDesc.paragraph2')}
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+                {t('about.detailedDesc.fund')}
               </p>
               
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                {t('about.detailedDesc.paragraph3')}
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+                {t('about.detailedDesc.coba')}
+              </p>
+              
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
+                {t('about.detailedDesc.purpose')}
+              </p>
+
+              {/* Goals */}
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">
+                {t('about.goals.title')}
+              </h3>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.goals.item1')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.goals.item2')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.goals.item3')}</span>
+                </li>
+              </ul>
+
+              {/* Advantages */}
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">
+                {t('about.advantages.title')}
+              </h3>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.advantages.item1')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.advantages.item2')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.advantages.item3')}</span>
+                </li>
+              </ul>
+
+              {/* Prospects */}
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">
+                {t('about.prospects.title')}
+              </h3>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.prospects.item1')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.prospects.item2')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.prospects.item3')}</span>
+                </li>
+              </ul>
+
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+                {t('about.education')}
+              </p>
+
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+                {t('about.community')}
+              </p>
+
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-justify">
+                {t('about.platform')}
+              </p>
+
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-justify">
+                {t('about.ecology')}
+              </p>
+
+              {/* Activities */}
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">
+                {t('about.activities.title')}
+              </h3>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.activities.item1')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.activities.item2')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.activities.item3')}</span>
+                </li>
+              </ul>
+
+              {/* Social Programs */}
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">
+                {t('about.social.title')}
+              </h3>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.social.item1')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.social.item2')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold-500 mr-2">-</span>
+                  <span>{t('about.social.item3')}</span>
+                </li>
+              </ul>
+
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
+                {t('about.conclusion')}
               </p>
             </motion.div>
           </div>
@@ -186,10 +305,10 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Our Core Values
+              {t('about.coreValues')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              The principles that guide our decisions and shape our commitment to our community.
+              {t('about.coreValuesDesc')}
             </p>
           </motion.div>
 

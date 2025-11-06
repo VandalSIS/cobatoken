@@ -20,12 +20,25 @@ const statusColors = {
 export default function Roadmap() {
   const { t } = useLanguage();
 
+  const getStatusLabel = (status: string) => {
+    switch (status) {
+      case 'completed':
+        return t('roadmap.status.completed');
+      case 'in-progress':
+        return t('roadmap.status.in-progress');
+      case 'upcoming':
+        return t('roadmap.status.upcoming');
+      default:
+        return status;
+    }
+  };
+
   // Create roadmap data dynamically with translations
   const roadmapData = [
     {
       id: '1',
       quarter: 'Q1',
-      year: 2024,
+      year: 2021,
       title: t('roadmap.q1.title'),
       description: t('roadmap.q1.description'),
       status: 'completed' as 'completed' | 'in-progress' | 'upcoming',
@@ -39,7 +52,7 @@ export default function Roadmap() {
     {
       id: '2',
       quarter: 'Q2',
-      year: 2024,
+      year: 2022,
       title: t('roadmap.q2.title'),
       description: t('roadmap.q2.description'),
       status: 'completed' as 'completed' | 'in-progress' | 'upcoming',
@@ -67,7 +80,7 @@ export default function Roadmap() {
     {
       id: '4',
       quarter: 'Q4',
-      year: 2024,
+      year: 2025,
       title: t('roadmap.q4.title'),
       description: t('roadmap.q4.description'),
       status: 'upcoming' as 'completed' | 'in-progress' | 'upcoming',
@@ -137,7 +150,7 @@ export default function Roadmap() {
                             </span>
                           </div>
                           <span
-                            className={`px-3 py-1 rounded-full text-xs font-medium capitalize ${
+                            className={`px-3 py-1 rounded-full text-xs font-medium ${
                               item.status === 'completed'
                                 ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400'
                                 : item.status === 'in-progress'
@@ -145,7 +158,7 @@ export default function Roadmap() {
                                 : 'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-400'
                             }`}
                           >
-                            {item.status.replace('-', ' ')}
+                            {getStatusLabel(item.status)}
                           </span>
                         </div>
 

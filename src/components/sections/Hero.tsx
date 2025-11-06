@@ -1,14 +1,16 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { ArrowRight, Shield, TrendingUp, Zap } from 'lucide-react';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, Shield, TrendingUp, Zap, Globe, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { TOKEN_METRICS } from '@/lib/constants';
 import { formatCurrency, formatLargeNumber } from '@/lib/utils';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Hero() {
-  const { t } = useLanguage();
+  const { t, language, setLanguage } = useLanguage();
+  const [langOpen, setLangOpen] = useState(false);
 
   const features = [
     {
@@ -51,9 +53,51 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="mb-6"
             >
-              <span className="inline-block px-4 py-2 rounded-full bg-gold-500/20 text-gold-400 text-sm font-medium mb-4">
-                🏆 {t('hero.badge')}
-              </span>
+              {/* Language Switcher */}
+              <div className="relative mb-4 inline-block">
+                <button
+                  onClick={() => setLangOpen(!langOpen)}
+                  className="flex items-center space-x-2 px-4 py-2 rounded-full bg-gold-500/20 text-gold-400 text-sm font-medium hover:bg-gold-500/30 transition-colors"
+                >
+                  <Globe className="h-4 w-4" />
+                  <span>{language === 'ru' ? '🇷🇺 Русский' : '🇺🇸 English'}</span>
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+                
+                <AnimatePresence>
+                  {langOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="absolute left-0 mt-2 w-40 bg-gray-800 rounded-lg shadow-lg border border-gray-700 z-50"
+                    >
+                      <button 
+                        onClick={() => {
+                          setLanguage('ru');
+                          setLangOpen(false);
+                        }}
+                        className={`w-full px-4 py-2 text-left text-sm hover:bg-gray-700 rounded-t-lg ${
+                          language === 'ru' ? 'bg-gold-500/20 text-gold-400' : 'text-gray-300'
+                        }`}
+                      >
+                        🇷🇺 Русский
+                      </button>
+                      <button 
+                        onClick={() => {
+                          setLanguage('en');
+                          setLangOpen(false);
+                        }}
+                        className={`w-full px-4 py-2 text-left text-sm hover:bg-gray-700 rounded-b-lg ${
+                          language === 'en' ? 'bg-gold-500/20 text-gold-400' : 'text-gray-300'
+                        }`}
+                      >
+                        🇺🇸 English
+                      </button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 {t('hero.title')}
                 <span className="block bg-gold-gradient bg-clip-text text-transparent">
@@ -74,9 +118,6 @@ export default function Hero() {
               <Button size="lg" className="group">
                 {t('hero.buyTokens')}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="lg">
-                {t('hero.downloadDocs')}
               </Button>
             </motion.div>
 
