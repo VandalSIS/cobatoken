@@ -114,26 +114,6 @@ export default function PrivacyContentEN() {
               </CardContent>
             </Card>
 
-            {/* Cookies */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Cookies and Tracking Technologies</CardTitle>
-              </CardHeader>
-              <CardContent className="prose dark:prose-invert max-w-none">
-                <p>
-                  We use cookies and similar tracking technologies to enhance your experience on our website. You can 
-                  control cookie preferences through your browser settings.
-                </p>
-                <p>Types of cookies we use:</p>
-                <ul>
-                  <li><strong>Essential Cookies:</strong> Necessary for website functionality</li>
-                  <li><strong>Analytics Cookies:</strong> Help us understand website usage</li>
-                  <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
-                  <li><strong>Marketing Cookies:</strong> Used for targeted advertising (with consent)</li>
-                </ul>
-              </CardContent>
-            </Card>
-
             {/* International Transfers */}
             <Card>
               <CardHeader>

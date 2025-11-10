@@ -8,10 +8,10 @@ import { NEWS_ITEMS } from '@/lib/constants';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function News() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
+    return date.toLocaleDateString(language === 'ru' ? 'ru-RU' : 'en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
@@ -49,12 +49,12 @@ export default function News() {
                 <div className="relative overflow-hidden">
                   <img
                     src={item.image}
-                    alt={item.title}
+                    alt={item.title[language]}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-gold-500 text-white px-3 py-1 rounded-full text-xs font-medium">
-                      {item.source}
+                      {item.source[language]}
                     </span>
                   </div>
                 </div>
@@ -68,12 +68,12 @@ export default function News() {
 
                   {/* Title */}
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2">
-                    {item.title}
+                    {item.title[language]}
                   </h3>
 
                   {/* Excerpt */}
                   <p className="text-gray-600 dark:text-gray-300 mb-4 flex-grow line-clamp-3">
-                    {item.excerpt}
+                    {item.excerpt[language]}
                   </p>
 
                   {/* Read More Link */}
@@ -82,7 +82,7 @@ export default function News() {
                     className="inline-flex items-center text-gold-600 dark:text-gold-400 hover:text-gold-700 dark:hover:text-gold-300 font-medium group"
                     whileHover={{ x: 5 }}
                   >
-                    Read more
+                    {t('news.readMore')}
                     <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </motion.a>
                 </CardContent>
@@ -99,7 +99,7 @@ export default function News() {
           className="text-center"
         >
           <Button variant="outline" size="lg" className="group">
-            View All News
+            {t('news.viewAll')}
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </motion.div>
@@ -113,19 +113,19 @@ export default function News() {
         >
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Never Miss an Update
+              {t('news.ctaTitle')}
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              Subscribe to our newsletter for the latest COBA token news, market insights, and exclusive updates delivered to your inbox.
+              {t('news.ctaDescription')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder={t('footer.enterEmail')}
                 className="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-500"
               />
               <Button className="whitespace-nowrap">
-                Subscribe
+                {t('footer.subscribe')}
               </Button>
             </div>
           </div>

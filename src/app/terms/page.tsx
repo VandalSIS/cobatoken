@@ -34,11 +34,11 @@ export default function TermsPage() {
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               {language === 'ru' 
-                ? 'Пожалуйста, внимательно прочитайте эти условия перед использованием услуг COBA Token. Эти условия регулируют использование нашей платформы и услуг.'
+                ? 'Пожалуйста, внимательно прочитайте эти условия перед использованием услуг COBA токен. Эти условия регулируют использование нашей платформы и услуг.'
                 : 'Please read these terms carefully before using COBA Token services. These terms govern your use of our platform and services.'}
             </p>
             <p className="text-sm text-gray-400 mt-4">
-              {language === 'ru' ? 'Последнее обновление:' : 'Last updated:'} 1 {language === 'ru' ? 'декабря' : 'December'} 2024
+              {language === 'ru' ? 'Последнее обновление:' : 'Last updated:'} {language === 'ru' ? '29 ноября 2025' : '29 November 2025'}
             </p>
           </motion.div>
         </div>

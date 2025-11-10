@@ -10,10 +10,10 @@ import { formatCurrency, formatLargeNumber, formatNumber } from '@/lib/utils';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const emissionData = [
-  { year: '2024', tokens: 9000000000, cumulative: 9000000000 },
-  { year: '2025', tokens: 9000000000, cumulative: 18000000000 },
-  { year: '2026', tokens: 9000000000, cumulative: 27000000000 },
-  { year: '2027', tokens: 6000000000, cumulative: 33000000000 },
+  { year: '2025', tokens: 9000000000, cumulative: 9000000000 },
+  { year: '2026', tokens: 9000000000, cumulative: 18000000000 },
+  { year: '2027', tokens: 9000000000, cumulative: 27000000000 },
+  { year: '2028', tokens: 6000000000, cumulative: 33000000000 },
 ];
 
 const CustomTooltip = ({ active, payload, label, language }: any) => {

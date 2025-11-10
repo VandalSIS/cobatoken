@@ -111,29 +111,56 @@ export const TOKEN_DISTRIBUTION: TokenDistribution[] = [
 export const NEWS_ITEMS: NewsItem[] = [
   {
     id: '1',
-    title: 'COBA Token Launches Revolutionary Gold-Backed Cryptocurrency',
-    excerpt: 'New ERC-20 token provides stability through physical gold reserves while maintaining blockchain efficiency.',
+    title: {
+      ru: 'COBA токен запускает революционную криптовалюту с золотым обеспечением',
+      en: 'COBA Token Launches Revolutionary Gold-Backed Cryptocurrency',
+    },
+    excerpt: {
+      ru: 'Новый токен ERC-20 обеспечивает стабильность за счёт физических золотых резервов, сохраняя эффективность блокчейна.',
+      en: 'New ERC-20 token provides stability through physical gold reserves while maintaining blockchain efficiency.',
+    },
     date: '2024-01-15',
     image: 'https://images.unsplash.com/photo-1605792657660-596af9009e82?w=600&h=400&fit=crop',
-    source: 'Крипто новости',
+    source: {
+      ru: 'Крипто новости',
+      en: 'Crypto News',
+    },
     url: '#',
   },
   {
     id: '2',
-    title: 'Объявлено о крупном партнерстве биржи для торговли COBA',
-    excerpt: 'Стратегическое партнерство обеспечит повышенную ликвидность и глобальный доступ к рынку для держателей токенов COBA.',
+    title: {
+      ru: 'Объявлено о крупном партнёрстве биржи для торговли COBA',
+      en: 'Major Exchange Partnership Announced for COBA Trading',
+    },
+    excerpt: {
+      ru: 'Стратегическое партнёрство обеспечит повышенную ликвидность и глобальный доступ к рынку для держателей токенов COBA.',
+      en: 'Strategic partnership will provide increased liquidity and global market access for COBA token holders.',
+    },
     date: '2024-02-03',
     image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop',
-    source: 'Блокчейн сегодня',
+    source: {
+      ru: 'Блокчейн сегодня',
+      en: 'Blockchain Today',
+    },
     url: '#',
   },
   {
     id: '3',
-    title: 'COBA запускает экологические программы',
-    excerpt: 'Держатели токенов могут участвовать в программах устойчивого развития и поддержке экологических инициатив.',
+    title: {
+      ru: 'COBA запускает экологические программы',
+      en: 'COBA Launches Environmental Programs',
+    },
+    excerpt: {
+      ru: 'Держатели токенов могут участвовать в программах устойчивого развития и поддержке экологических инициатив.',
+      en: 'Token holders can participate in sustainable development programs and support environmental initiatives.',
+    },
     date: '2024-02-20',
     image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop',
-    source: 'Еженедельник DeFi',
+    source: {
+      ru: 'Еженедельник DeFi',
+      en: 'DeFi Weekly',
+    },
     url: '#',
   },
 ];

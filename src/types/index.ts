@@ -36,13 +36,18 @@ export interface ContactFormData {
   interestType: string;
 }
 
+export interface LocalizedContent {
+  ru: string;
+  en: string;
+}
+
 export interface NewsItem {
   id: string;
-  title: string;
-  excerpt: string;
+  title: LocalizedContent;
+  excerpt: LocalizedContent;
   date: string;
   image: string;
-  source: string;
+  source: LocalizedContent;
   url: string;
 }
 

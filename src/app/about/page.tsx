@@ -130,7 +130,7 @@ export default function AboutPage() {
             >
               <img
                 src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=600&fit=crop"
-                alt="Modern office representing COBA Token headquarters"
+                alt={t('about.heroImageAlt')}
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute inset-0 bg-gold-500/20 blur-3xl rounded-full transform scale-150" />

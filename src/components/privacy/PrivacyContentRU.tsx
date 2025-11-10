@@ -114,26 +114,6 @@ export default function PrivacyContentRU() {
               </CardContent>
             </Card>
 
-            {/* Cookies */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Cookies и технологии отслеживания</CardTitle>
-              </CardHeader>
-              <CardContent className="prose dark:prose-invert max-w-none">
-                <p>
-                  Мы используем cookies и аналогичные технологии отслеживания для улучшения вашего опыта на нашем 
-                  веб-сайте. Вы можете управлять настройками cookies через настройки вашего браузера.
-                </p>
-                <p>Типы cookies, которые мы используем:</p>
-                <ul>
-                  <li><strong>Обязательные Cookies:</strong> Необходимы для функциональности веб-сайта</li>
-                  <li><strong>Аналитические Cookies:</strong> Помогают нам понять использование веб-сайта</li>
-                  <li><strong>Пр едпочтительные Cookies:</strong> Запоминают ваши настройки и предпочтения</li>
-                  <li><strong>Маркетинговые Cookies:</strong> Используются для таргетированной рекламы (с согласия)</li>
-                </ul>
-              </CardContent>
-            </Card>
-
             {/* International Transfers */}
             <Card>
               <CardHeader>

@@ -71,9 +71,7 @@ export default function TermsContentEN() {
               </CardHeader>
               <CardContent className="prose dark:prose-invert max-w-none">
                 <p>
-                  These Terms and Conditions ("Terms") constitute a legally binding agreement between you and COBA Token 
-                  ("Company," "we," "us," or "our") regarding your use of our website, platform, and services related to 
-                  COBA tokens.
+                  These Terms constitute a legally binding agreement between you and COBA regarding your use of our website, platform, and services related to COBA tokens.
                 </p>
                 <p>
                   By accessing or using our services, you acknowledge that you have read, understood, and agree to be bound 
@@ -93,13 +91,13 @@ export default function TermsContentEN() {
               </CardHeader>
               <CardContent className="prose dark:prose-invert max-w-none">
                 <ul>
-                  <li><strong>"COBA Token" or "COBA":</strong> The ERC-20 token issued by our company, backed by financial reserves</li>
+                  <li><strong>"COBA":</strong> The ERC-20 token issued by our company, backed by financial reserves.</li>
                   <li><strong>"Platform":</strong> Our website, applications, and related services</li>
-                  <li><strong>"User" or "You":</strong> Any individual or entity using our services</li>
-                  <li><strong>"Services":</strong> All services provided by COBA Token, including token sales, trading, and related activities</li>
-                  <li><strong>"Reserves":</strong> Financial reserves backing COBA tokens</li>
+                  <li><strong>"User" or "You":</strong> Any individual or entity using services provided by COBA, including token exchanges and related activities.</li>
+                  <li><strong>"Services":</strong> All services provided by COBA, including token exchanges and related activities</li>
+                  <li><strong>"Reserves":</strong> COBA replenishes and maintains the financial reserves.</li>
                   <li><strong>"KYC":</strong> Know Your Customer verification procedures</li>
-                  <li><strong>"AML":</strong> Anti-Money Laundering compliance requirements</li>
+                  <li><strong>"AML":</strong> Supports anti-money laundering compliance requirements.</li>
                 </ul>
               </CardContent>
             </Card>
@@ -116,14 +114,7 @@ export default function TermsContentEN() {
                   <li>Be at least 18 years old (or the age of majority in your jurisdiction)</li>
                   <li>Have the legal capacity to enter into binding agreements</li>
                   <li>Not be a resident of any jurisdiction where our services are prohibited</li>
-                  <li>Comply with all applicable laws and regulations</li>
-                  <li>Complete our KYC/AML verification process</li>
-                </ul>
-
-                <h4>Account Registration</h4>
-                <p>When creating an account, you agree to:</p>
-                <ul>
-                  <li>Provide accurate, complete, and current information</li>
+                  <li>Comply with all applicable laws and regulations.</li>
                   <li>Maintain the confidentiality of your account credentials</li>
                   <li>Notify us immediately of any unauthorized account access</li>
                   <li>Accept responsibility for all activities under your account</li>
@@ -163,32 +154,31 @@ export default function TermsContentEN() {
               </CardHeader>
               <CardContent className="prose dark:prose-invert max-w-none">
                 <p className="font-bold text-red-600 dark:text-red-400">
-                  IMPORTANT: Cryptocurrency investments carry significant risks. You should carefully consider these risks 
-                  before purchasing COBA tokens:
+                  IMPORTANT: Investments in other cryptocurrencies carry significant risks. You should carefully consider these risks before purchasing tokens:
                 </p>
 
                 <h4>Market Risks</h4>
                 <ul>
-                  <li>Token value may fluctuate significantly</li>
-                  <li>Gold prices are subject to market volatility</li>
-                  <li>Liquidity may be limited in certain market conditions</li>
-                  <li>Trading may be suspended during extreme market events</li>
+                  <li>The value of other tokens can fluctuate significantly.</li>
+                  <li>Gold prices are less susceptible to market volatility</li>
+                  <li>Liquidity may be limited in certain market conditions.</li>
+                  <li>Exchanges may be paused during extreme market events.</li>
                 </ul>
 
                 <h4>Technology Risks</h4>
                 <ul>
-                  <li>Blockchain technology is relatively new and evolving</li>
-                  <li>Smart contracts may contain bugs or vulnerabilities</li>
-                  <li>Network congestion may affect transaction processing</li>
-                  <li>Private key loss may result in permanent token loss</li>
+                  <li>Blockchain technology is relatively new and evolving.</li>
+                  <li>Other smart contracts may contain bugs or vulnerabilities.</li>
+                  <li>Network congestion may affect transaction processing.</li>
+                  <li>Private key loss may result in permanent token loss.</li>
                 </ul>
 
                 <h4>Regulatory Risks</h4>
                 <ul>
-                  <li>Cryptocurrency regulations are evolving globally</li>
-                  <li>Future regulatory changes may affect token utility</li>
-                  <li>Some jurisdictions may prohibit cryptocurrency activities</li>
-                  <li>Compliance requirements may change over time</li>
+                  <li>Cryptocurrency regulations are evolving globally.</li>
+                  <li>Future regulatory changes may affect token utility.</li>
+                  <li>Some jurisdictions may prohibit activities related to cryptocurrency.</li>
+                  <li>Compliance requirements may change over time.</li>
                 </ul>
               </CardContent>
             </Card>
@@ -267,11 +257,10 @@ export default function TermsContentEN() {
               </CardHeader>
               <CardContent className="prose dark:prose-invert max-w-none">
                 <p>
-                  We may terminate or suspend your account and access to our services at any time, with or without cause, 
-                  and with or without notice. Upon termination, your right to use our services will cease immediately.
+                  We may terminate or suspend access to our services at any time, with or without cause, and with or without notice. Upon termination, your right to use our services will cease immediately.
                 </p>
                 <p>
-                  You may terminate your account at any time by following the account closure process on our platform.
+                  You may discontinue your activity at any time by following the closure process on our platform.
                 </p>
               </CardContent>
             </Card>

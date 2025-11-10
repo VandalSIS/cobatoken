@@ -76,20 +76,24 @@ const translations = {
     // News
     'news.title': 'Последние новости и обновления',
     'news.description': 'Будьте в курсе развития токенов COBA, партнерских отношений и отраслевых инсайтов.',
+    'news.readMore': 'Читать далее',
+    'news.viewAll': 'Посмотреть все новости',
+    'news.ctaTitle': 'Не пропустите обновления',
+    'news.ctaDescription': 'Подпишитесь на нашу рассылку, чтобы получать последние новости о COBA токен, рыночную аналитику и эксклюзивные обновления напрямую на вашу почту.',
     
     // FAQ
     'faq.title': 'Часто задаваемые вопросы',
     'faq.description': 'Получите ответы на часто задаваемые вопросы о нашей платформе и COBA, стабильность которого обеспечивает золото.',
     'faq.stillQuestions': 'Остались вопросы?',
     'faq.teamHelp': 'Мы готовы помочь вам понять токены COBA и начать работу с криптовалютой с золотым обеспечением.',
-    'faq.contactSupport': 'Связаться с поддержкой',
+    'faq.contactSupport': 'info@cobagold.com',
     
     // Footer
     'footer.description': 'Будущее криптовалюты с золотым обеспечением. Сочетаем стабильность драгоценных металлов с инновациями блокчейн-технологий.',
     'footer.company': 'Компания',
     'footer.resources': 'Ресурсы',
     'footer.legal': 'Правовая информация',
-    'footer.copyright': '© 2024 ICC "Universum" COBA Token. Все права защищены.',
+    'footer.copyright': '© 2024 ICC "Universum" COBA токен. Все права защищены.',
     'footer.stayUpdated': 'Будьте в курсе с COBA',
     'footer.newsletterDesc': 'Получайте последние новости, обновления и аналитику о токене COBA и рынке криптовалют с золотым обеспечением.',
     'footer.enterEmail': 'Введите ваш email',
@@ -136,6 +140,7 @@ const translations = {
     // About Page
     'about.title': 'ICC "Universum"',
     'about.subtitle': 'Революция в мире криптовалют с золотым обеспечением',
+    'about.heroImageAlt': 'Современный офис, представляющий штаб-квартиру COBA токен',
     'about.description': 'ICC "Universum" — некоммерческая организация, созданная в сотрудничестве с Агентством Общественной Безопасности (Швейцария). Наша миссия — создание устойчивой экосистемы криптовалют с золотым обеспечением, которая сочетает финансовые инновации с экологической и социальной ответственностью.',
     'about.coreValues': 'Наши основные ценности',
     'about.coreValuesDesc': 'Принципы, которые направляют наши решения и формируют нашу приверженность сообществу.',
@@ -144,9 +149,9 @@ const translations = {
     'about.ourJourney': 'Наш путь',
     'about.journeyDescription': 'От создания некоммерческой организации до запуска революционной криптовалюты с золотым обеспечением.',
     'about.readyToJoin': 'Готовы присоединиться к революции золотого обеспечения?',
-    'about.joinDescription': 'Станьте частью будущего стабильных цифровых активов с COBA Token.',
+    'about.joinDescription': 'Станьте частью будущего стабильных цифровых активов с COBA токен.',
     'about.getStarted': 'Начать сейчас',
-    'about.joinCommunity': 'Присоединиться к сообществу',
+    'about.joinCommunity': 'Поменять USDT на СОВА',
     'about.downloadDocs': 'ПОМЕНЯТЬ COBA на USDT',
     
     // About Page Values
@@ -224,7 +229,7 @@ const translations = {
     'contact.callDescription': 'Говорите напрямую с нами в рабочее время',
     'contact.visitUs': 'Посетите нас',
     'contact.visitDescription': 'Наша штаб-квартира открыта для запланированных встреч',
-    'contact.multipleWays': 'Несколько способов связаться с нами',
+    'contact.multipleWays': 'Способ связаться с нами',
     'contact.communicationDescription': 'Выберите способ общения, который лучше всего подходит для вас. Мы стремимся предоставлять быстрые и полезные ответы.',
     
     // Contact Form
@@ -391,13 +396,17 @@ const translations = {
     // News
     'news.title': 'Latest News & Updates',
     'news.description': 'Stay informed about COBA token developments, partnerships, and industry insights.',
+    'news.readMore': 'Read more',
+    'news.viewAll': 'View All News',
+    'news.ctaTitle': 'Never Miss an Update',
+    'news.ctaDescription': 'Subscribe to our newsletter for the latest COBA token news, market insights, and exclusive updates delivered to your inbox.',
     
     // FAQ
     'faq.title': 'Frequently Asked Questions',
     'faq.description': 'Get answers to frequently asked questions about our platform and COBA, whose stability is ensured by gold.',
     'faq.stillQuestions': 'Still have questions?',
     'faq.teamHelp': 'We are here to help you understand COBA tokens and get started with gold-backed cryptocurrency.',
-    'faq.contactSupport': 'Contact Support',
+    'faq.contactSupport': 'info@cobagold.com',
     
     // Footer
     'footer.description': 'The future of gold-backed cryptocurrency. Combining the stability of precious metals with blockchain technology innovations.',
@@ -451,6 +460,7 @@ const translations = {
     // About Page
     'about.title': 'About ICC "Universum"',
     'about.subtitle': 'Revolutionizing Gold-Backed Cryptocurrency',
+    'about.heroImageAlt': 'Modern office representing COBA headquarters',
     'about.description': 'ICC "Universum" is a non-profit organization created in collaboration with the Public Safety Agency (Switzerland). Our mission is to create a sustainable ecosystem of gold-backed cryptocurrencies that combines financial innovation with environmental and social responsibility.',
     'about.coreValues': 'Our Core Values',
     'about.coreValuesDesc': 'The principles that guide our decisions and shape our commitment to our community.',
@@ -461,7 +471,7 @@ const translations = {
     'about.readyToJoin': 'Ready to Join the Gold-Backed Revolution?',
     'about.joinDescription': 'Become part of the future of stable digital assets with COBA Token.',
     'about.getStarted': 'Get Started',
-    'about.joinCommunity': 'Join the Community',
+    'about.joinCommunity': 'Exchange USDT to COBA',
     'about.downloadDocs': 'EXCHANGE COBA to USDT',
     
     // About Page Values
@@ -539,7 +549,7 @@ const translations = {
     'contact.callDescription': 'Speak directly with us during business hours',
     'contact.visitUs': 'Visit Us',
     'contact.visitDescription': 'Our headquarters are open for scheduled meetings',
-    'contact.multipleWays': 'Multiple Ways to Reach Us',
+    'contact.multipleWays': 'Way to Reach Us',
     'contact.communicationDescription': 'Choose the communication method that works best for you. We\'re committed to providing prompt, helpful responses.',
     
     // Contact Form

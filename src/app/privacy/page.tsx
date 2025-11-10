@@ -38,7 +38,7 @@ export default function PrivacyPage() {
                 : 'Your privacy is fundamental to our relationship. Learn how we collect, use, and protect your personal information.'}
             </p>
             <p className="text-sm text-gray-400 mt-4">
-              {language === 'ru' ? 'Последнее обновление:' : 'Last updated:'} 1 {language === 'ru' ? 'декабря' : 'December'} 2024
+              {language === 'ru' ? 'Последнее обновление:' : 'Last updated:'} {language === 'ru' ? '29 ноября 2025' : '29 November 2025'}
             </p>
           </motion.div>
         </div>
